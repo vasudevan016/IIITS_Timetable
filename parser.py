@@ -75,3 +75,58 @@ for course, files in pdf_files.items():
 # Export the compiled database
 with open('students.json', 'w') as f:
     json.dump(student_db, f, indent=4)
+# ==========================================
+# PART 2: TIMETABLE GRID PARSER
+# ==========================================
+import pdfplumber
+
+timetable_filepath = os.path.join("data", "Time table M2026.pdf")
+timetable_db = {"UG1": {}, "UG2": {}, "UG3": {}, "UG4": {}}
+days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+
+print("Scanning for Timetable PDF...")
+if os.path.exists(timetable_filepath):
+    try:
+        with pdfplumber.open(timetable_filepath) as pdf:
+            # The schedule spans multiple pages, so we iterate through them
+            for page in pdf.pages:
+                tables = page.extract_tables()
+                
+                for table in tables:
+                    if not table: continue
+                    
+                    # Assuming table[0] contains the Days header
+                    # table[1:] contains Time in column 0, and Classes in columns 1-6
+                    for row in table[1:]:
+                        time_slot = row[0] 
+                        if not time_slot or "BREAK" in time_slot.upper():
+                            continue
+                        
+                        clean_time = time_slot.replace('\n', '').strip()
+                        
+                        for i, day in enumerate(days):
+                            # Col 0 is time, Col 1 is Monday, Col 2 is Tuesday, etc.
+                            if i + 1 < len(row) and row[i+1]:
+                                classes_raw = row[i+1].replace('\n', ' ').strip()
+                                
+                                if day not in timetable_db["UG1"]: 
+                                    timetable_db["UG1"][day] = {}
+                                if clean_time not in timetable_db["UG1"][day]: 
+                                    timetable_db["UG1"][day][clean_time] = []
+                                    
+                                # You can add custom regex here later to split "OCW4 G08" 
+                                # into separate "course", "section", and "room" variables.
+                                timetable_db["UG1"][day][clean_time].append({
+                                    "raw_text": classes_raw,
+                                    "branch": "ALL" # Placeholder until regex is added
+                                })
+                                
+        # Export the compiled timetable database
+        with open('timetable.json', 'w') as f:
+            json.dump(timetable_db, f, indent=4)
+        print("Successfully generated timetable.json!")
+        
+    except Exception as e:
+        print(f"Error extracting tables: {e}")
+else:
+    print("Timetable PDF not found in data folder.")

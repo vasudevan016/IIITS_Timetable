@@ -65,6 +65,40 @@
         <span id="toast-msg" class="text-sm font-bold tracking-wide"></span>
     </div>
 
+    <!-- Vacant Room Modal -->
+    <div id="room-modal" class="hide fixed inset-0 z-[300] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in">
+        <div class="glass-panel w-full max-w-lg rounded-3xl p-6 md:p-8 shadow-2xl border border-gray-700/50 relative">
+            <button id="close-room-modal" class="absolute top-5 right-5 text-gray-500 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <h2 class="text-2xl font-extrabold mb-1 tracking-tight text-white"><i class="fa-solid fa-door-open mr-2 text-brand-400"></i>Vacant Rooms</h2>
+            <p class="text-xs text-gray-400 mb-6">Find empty classrooms for club meetings or self-study.</p>
+            
+            <div class="grid grid-cols-2 gap-4 mb-6">
+                <div class="space-y-1.5">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider pl-1">Select Day</label>
+                    <select id="room-day-select" class="w-full bg-gray-900/80 border border-gray-700/50 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition-colors cursor-pointer appearance-none">
+                        <option value="Monday">Monday</option><option value="Tuesday">Tuesday</option><option value="Wednesday">Wednesday</option><option value="Thursday">Thursday</option><option value="Friday">Friday</option><option value="Saturday">Saturday</option>
+                    </select>
+                </div>
+                <div class="space-y-1.5">
+                    <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider pl-1">Time Slot</label>
+                    <select id="room-time-select" class="w-full bg-gray-900/80 border border-gray-700/50 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition-colors cursor-pointer appearance-none">
+                        <!-- Populated by JS -->
+                    </select>
+                </div>
+            </div>
+            
+            <div class="bg-gray-950/50 rounded-2xl p-4 border border-white/5 min-h-[150px]">
+                <div class="flex items-center justify-between mb-3 border-b border-gray-800 pb-2">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Available Rooms</span>
+                    <span id="room-count" class="bg-brand-500/20 text-brand-400 text-[10px] font-bold px-2 py-0.5 rounded border border-brand-500/20">0</span>
+                </div>
+                <div id="vacant-room-list" class="flex flex-wrap gap-2">
+                    <div class="w-full text-center py-6 text-gray-500 text-sm font-medium"><i class="fa-solid fa-circle-notch fa-spin mr-2"></i>Select a time slot</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="install-banner" class="hide fixed bottom-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-[400px] z-[100] glass-panel rounded-2xl p-4 flex items-center justify-between shadow-2xl border border-brand-500/30 animate-slide-up-banner bg-gray-900/90">
         <div class="flex items-center gap-3">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-500 to-indigo-600 flex items-center justify-center shadow-lg flex-shrink-0">
@@ -113,7 +147,11 @@
                     <i class="fa-solid fa-share-nodes text-white text-lg group-hover:scale-110 transition-transform"></i>
                     <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-gray-800 text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Share Day</span>
                 </div>
-                <div>
+                <!-- New Room Finder Button -->
+                <button id="open-room-finder" class="w-10 h-10 rounded-xl bg-gray-800/80 hover:bg-white/10 flex items-center justify-center border border-gray-700/50 transition-all group">
+                    <i class="fa-solid fa-door-open text-gray-400 group-hover:text-brand-400 transition-colors"></i>
+                </button>
+                <div class="ml-2">
                     <h1 class="text-xl font-bold tracking-tight hidden sm:block leading-none mb-1">IIITS Schedule</h1>
                     <div id="live-clock" class="text-xs font-mono text-brand-400 font-bold tracking-widest hidden sm:block"></div>
                 </div>
@@ -154,10 +192,8 @@
 
             <div class="flex overflow-x-auto gap-2 md:gap-3 mb-5 pb-2 hide-scrollbar w-full border-b border-gray-800/50" id="day-tabs"></div>
 
-            <!-- Redesigned Ultra-Compact Mobile Layout for Focus Container -->
             <div id="focus-container" class="space-y-2.5 md:space-y-4 max-w-4xl mx-auto w-full flex-grow"></div>
             
-            <!-- Compact Grid Mode Container -->
             <div id="grid-container" class="hide grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 flex-grow w-full h-full"></div>
             
             <div class="mt-8 mb-2 text-center text-[11px] text-gray-600 font-bold tracking-[0.2em] opacity-60 uppercase">Created by Vasudevan M</div>
@@ -170,11 +206,11 @@
         let viewMode = 'focus'; 
         const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         
+        // Master Room List extracted from M2026 PDF
+        const CAMPUS_ROOMS = ["G04", "G05", "G06", "G07", "G08", "G09", "B03", "B04", "B05", "103", "104", "105", "108", "109", "110", "111", "112", "114/102"];
+        
         let deferredPrompt;
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault(); deferredPrompt = e; 
-            document.getElementById('install-banner').classList.remove('hide');
-        });
+        window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); deferredPrompt = e; document.getElementById('install-banner').classList.remove('hide'); });
         document.getElementById('close-install-btn').addEventListener('click', () => { document.getElementById('install-banner').classList.add('hide'); });
         document.getElementById('install-btn').addEventListener('click', async () => {
             document.getElementById('install-banner').classList.add('hide'); 
@@ -182,10 +218,8 @@
         });
 
         function showToast(msg) {
-            const toast = document.getElementById('toast');
-            document.getElementById('toast-msg').innerText = msg;
-            toast.classList.add('show');
-            setTimeout(() => toast.classList.remove('show'), 3000);
+            const toast = document.getElementById('toast'); document.getElementById('toast-msg').innerText = msg;
+            toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3000);
         }
 
         async function initApp() {
@@ -210,8 +244,7 @@
 
         function sanitizeName(rawName) {
             if (!rawName) return "Student";
-            let name = rawName.replace(/S202\d{7}/gi, '').replace(/\S+@\S+\.\S+/g, '').replace(/\b(ECE|CSE|AI&DS|AIDS|Sec\d+)\b/gi, '').replace(/[^a-zA-Z\s]/g, '').replace(/\s+/g, ' ').trim(); 
-            return name || "Student";
+            return rawName.replace(/S202\d{7}/gi, '').replace(/\S+@\S+\.\S+/g, '').replace(/\b(ECE|CSE|AI&DS|AIDS|Sec\d+)\b/gi, '').replace(/[^a-zA-Z\s]/g, '').replace(/\s+/g, ' ').trim() || "Student";
         }
 
         document.getElementById('login-form').addEventListener('submit', (e) => {
@@ -246,28 +279,84 @@
         function setViewMode(mode) {
             viewMode = mode;
             const isFocus = mode === 'focus';
-            
             document.getElementById('view-focus-btn').className = `px-4 py-1.5 rounded-md text-sm font-bold transition-all ${isFocus ? 'bg-gray-700 text-white shadow' : 'text-gray-400 hover:text-white'}`;
             document.getElementById('view-grid-btn').className = `px-4 py-1.5 rounded-md text-sm font-bold transition-all ${!isFocus ? 'bg-gray-700 text-white shadow' : 'text-gray-400 hover:text-white'}`;
             document.getElementById('mobile-view-focus').className = `px-4 py-1.5 rounded-md text-sm font-bold transition-all ${isFocus ? 'bg-gray-700 text-white shadow' : 'text-gray-400'}`;
             document.getElementById('mobile-view-grid').className = `px-4 py-1.5 rounded-md text-sm font-bold transition-all ${!isFocus ? 'bg-gray-700 text-white shadow' : 'text-gray-400'}`;
 
             if(isFocus) {
-                document.getElementById('day-tabs').classList.remove('hide');
-                document.getElementById('focus-container').classList.remove('hide');
-                document.getElementById('grid-container').classList.add('hide');
+                document.getElementById('day-tabs').classList.remove('hide'); document.getElementById('focus-container').classList.remove('hide'); document.getElementById('grid-container').classList.add('hide');
             } else {
-                document.getElementById('day-tabs').classList.add('hide');
-                document.getElementById('focus-container').classList.add('hide');
-                document.getElementById('grid-container').classList.remove('hide');
+                document.getElementById('day-tabs').classList.add('hide'); document.getElementById('focus-container').classList.add('hide'); document.getElementById('grid-container').classList.remove('hide');
             }
             renderSchedule();
         }
         
-        document.getElementById('view-focus-btn').onclick = () => setViewMode('focus');
-        document.getElementById('view-grid-btn').onclick = () => setViewMode('grid');
-        document.getElementById('mobile-view-focus').onclick = () => setViewMode('focus');
-        document.getElementById('mobile-view-grid').onclick = () => setViewMode('grid');
+        document.getElementById('view-focus-btn').onclick = () => setViewMode('focus'); document.getElementById('view-grid-btn').onclick = () => setViewMode('grid');
+        document.getElementById('mobile-view-focus').onclick = () => setViewMode('focus'); document.getElementById('mobile-view-grid').onclick = () => setViewMode('grid');
+
+        // --- ROOM FINDER LOGIC ---
+        document.getElementById('open-room-finder').addEventListener('click', () => {
+            const modal = document.getElementById('room-modal');
+            const timeSelect = document.getElementById('room-time-select');
+            
+            const allTimes = new Set();
+            ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].forEach(day => {
+                const dayData = timetableData["UG1"]?.[day];
+                if (dayData) Object.keys(dayData).forEach(t => allTimes.add(t));
+            });
+            
+            timeSelect.innerHTML = '';
+            Array.from(allTimes).sort().forEach(time => {
+                timeSelect.innerHTML += `<option value="${time}">${time}</option>`;
+            });
+
+            document.getElementById('room-day-select').value = activeDay === 'Sunday' ? 'Monday' : activeDay;
+            modal.classList.remove('hide');
+            searchVacantRooms();
+        });
+
+        document.getElementById('close-room-modal').addEventListener('click', () => { document.getElementById('room-modal').classList.add('hide'); });
+        document.getElementById('room-day-select').addEventListener('change', searchVacantRooms);
+        document.getElementById('room-time-select').addEventListener('change', searchVacantRooms);
+
+        function searchVacantRooms() {
+            const day = document.getElementById('room-day-select').value;
+            const time = document.getElementById('room-time-select').value;
+            const list = document.getElementById('vacant-room-list');
+            const count = document.getElementById('room-count');
+            
+            if (!time) return;
+
+            let occupiedRooms = new Set();
+            
+            Object.keys(timetableData).forEach(batch => {
+                const slots = timetableData[batch]?.[day]?.[time];
+                if (slots) {
+                    slots.forEach(s => {
+                        if (s.room) {
+                            let cleanRoom = s.room.toUpperCase().replace(/LAB\s*/i, '').trim();
+                            occupiedRooms.add(cleanRoom);
+                        }
+                    });
+                }
+            });
+
+            const vacantRooms = CAMPUS_ROOMS.filter(r => !occupiedRooms.has(r));
+            
+            count.innerText = vacantRooms.length;
+            list.innerHTML = '';
+            
+            if (vacantRooms.length === 0) {
+                list.innerHTML = `<div class="w-full text-center py-6 text-red-400 text-sm font-medium">Campus is completely full during this slot!</div>`;
+                return;
+            }
+
+            vacantRooms.forEach(room => {
+                list.innerHTML += `<div class="bg-gray-800/80 border border-gray-600/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm font-mono shadow-sm"><i class="fa-solid fa-door-open mr-2 text-emerald-400"></i>${room}</div>`;
+            });
+        }
+        // -------------------------
 
         function getMyClassForSlot(slots) {
             return slots.find(slot => {
@@ -377,14 +466,9 @@
                 btn.onclick = () => { activeDay = day; renderSchedule(); };
                 tabsContainer.appendChild(btn);
             });
-            
-            // Auto-scroll the active tab into view on mobile
             const activeBtn = tabsContainer.querySelector('.bg-brand-600');
             if(activeBtn) {
-                tabsContainer.scrollTo({
-                    left: activeBtn.offsetLeft - (tabsContainer.offsetWidth / 2) + (activeBtn.offsetWidth / 2),
-                    behavior: 'smooth'
-                });
+                tabsContainer.scrollTo({ left: activeBtn.offsetLeft - (tabsContainer.offsetWidth / 2) + (activeBtn.offsetWidth / 2), behavior: 'smooth' });
             }
         }
 
@@ -524,40 +608,17 @@
             document.getElementById('status-text').innerText = `You have ${totalClasses} total classes scheduled for this week.`;
         }
 
-        // SWIPE GESTURE LOGIC
-        let touchStartX = 0;
-        let touchEndX = 0;
+        let touchStartX = 0; let touchEndX = 0;
         const focusContainer = document.getElementById('focus-container');
-        
-        focusContainer.addEventListener('touchstart', e => {
-            touchStartX = e.changedTouches[0].screenX;
-        }, {passive: true});
-
-        focusContainer.addEventListener('touchend', e => {
-            touchEndX = e.changedTouches[0].screenX;
-            handleSwipe();
-        }, {passive: true});
+        focusContainer.addEventListener('touchstart', e => { touchStartX = e.changedTouches[0].screenX; }, {passive: true});
+        focusContainer.addEventListener('touchend', e => { touchEndX = e.changedTouches[0].screenX; handleSwipe(); }, {passive: true});
 
         function handleSwipe() {
             if (viewMode !== 'focus') return;
-            const swipeThreshold = 50;
-            const swipeDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+            const swipeThreshold = 50; const swipeDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
             const currentIndex = swipeDays.indexOf(activeDay);
-            
-            if (touchStartX - touchEndX > swipeThreshold) {
-                // Swipe Left -> Next Day
-                if (currentIndex < swipeDays.length - 1) {
-                    activeDay = swipeDays[currentIndex + 1];
-                    renderSchedule();
-                }
-            }
-            if (touchEndX - touchStartX > swipeThreshold) {
-                // Swipe Right -> Prev Day
-                if (currentIndex > 0) {
-                    activeDay = swipeDays[currentIndex - 1];
-                    renderSchedule();
-                }
-            }
+            if (touchStartX - touchEndX > swipeThreshold && currentIndex < swipeDays.length - 1) { activeDay = swipeDays[currentIndex + 1]; renderSchedule(); }
+            if (touchEndX - touchStartX > swipeThreshold && currentIndex > 0) { activeDay = swipeDays[currentIndex - 1]; renderSchedule(); }
         }
         
         if ('serviceWorker' in navigator) window.addEventListener('load', () => navigator.serviceWorker.register('sw.js').catch(e => {}));
