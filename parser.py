@@ -91,11 +91,10 @@ print("Scanning for Timetable PDF...")
 if os.path.exists(timetable_filepath):
     try:
         with pdfplumber.open(timetable_filepath) as pdf:
-            # UG1 is page 1, UG2 is page 2, etc.
             for page_num, page in enumerate(pdf.pages):
                 batch = f"UG{page_num + 1}"
                 if batch not in timetable_db:
-                    break # Stop if we go past UG4
+                    break 
                 
                 tables = page.extract_tables()
                 for table in tables:
@@ -106,14 +105,12 @@ if os.path.exists(timetable_filepath):
                         if not time_slot or "BREAK" in time_slot.upper() or "LUNCH" in time_slot.upper():
                             continue
                         
-                        # Fix ugly PDF time formatting
                         clean_time = time_slot.replace('\n', '').strip()
                         if '-' in clean_time and ' - ' not in clean_time:
                             clean_time = clean_time.replace('-', ' - ')
                         
                         for i, day in enumerate(days):
                             if i + 1 < len(row) and row[i+1]:
-                                # Split multiple classes packed into a single grid cell
                                 classes_raw = row[i+1].split('\n')
                                 
                                 if day not in timetable_db[batch]: 
@@ -125,19 +122,18 @@ if os.path.exists(timetable_filepath):
                                     class_str = class_str.strip()
                                     if not class_str: continue
                                     
-                                    # Regex to accurately slice "OCW4 G08" or "DLD1 Lab 114/102"
                                     match = re.match(r'^([A-Za-z]+)(\d*)\s+(.*)$', class_str)
                                     if match:
                                         base = match.group(1).upper()
                                         sec_num = match.group(2)
                                         room = match.group(3).strip()
                                         
-                                        # Universal batch classes don't need section filtering
                                         if base in ["FHVE", "EE", "EDL", "PGP", "QRA"]:
                                             branch = "ALL"
                                             section = ""
                                         else:
-                                            branch = "ALL" # Default to all branches unless strictly specified
+                                            # THE FIX: Leave branch empty so the web app is forced to match your section!
+                                            branch = "" 
                                             section = f"Sec{sec_num}" if sec_num else ""
                                             
                                         timetable_db[batch][day][clean_time].append({
@@ -148,17 +144,15 @@ if os.path.exists(timetable_filepath):
                                             "branch": branch
                                         })
                                     else:
-                                        # Fallback for weird text formats (e.g. "DSP G06")
                                         parts = class_str.split()
                                         timetable_db[batch][day][clean_time].append({
                                             "course": parts[0] if parts else class_str,
                                             "base": parts[0].upper() if parts else class_str,
                                             "section": "",
                                             "room": " ".join(parts[1:]) if len(parts) > 1 else "",
-                                            "branch": "ALL"
+                                            "branch": "" 
                                         })
                                         
-        # Export the beautifully formatted JSON
         with open('timetable.json', 'w') as f:
             json.dump(timetable_db, f, indent=4)
         print("Successfully repaired and generated timetable.json!")
