@@ -1,202 +1,909 @@
 {
-  "UG1": {
-    "Monday": {
-      "08:45 AM - 09:45 AM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec4", "room": "G08" },
-        { "base": "OCW", "course": "OCW", "section": "Sec1", "room": "LAB 103" }
-      ],
-      "09:45 AM - 10:45 AM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec1", "room": "LAB 103" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec2", "room": "G08" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec3", "room": "G07" }
-      ],
-      "11:00 AM - 12:00 PM": [
-        { "base": "DLD", "course": "DLD", "section": "Sec2", "room": "G08" },
-        { "base": "CP", "course": "CP", "section": "Sec3", "room": "Lab 103" },
-        { "base": "DLD", "course": "DLD", "section": "Sec1", "room": "G09" }
-      ],
-      "12:00 PM - 01:00 PM": [
-        { "base": "DSMA", "course": "DSMA", "section": "Sec4", "room": "G07" },
-        { "base": "CP", "course": "CP", "section": "Sec3", "room": "Lab 103" }
-      ],
-      "02:15 PM - 03:15 PM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec2", "room": "Lab 103" },
-        { "base": "OCW", "course": "OCW", "section": "Sec3", "room": "G07" },
-        { "base": "CP", "course": "CP", "section": "Sec1", "room": "G08" }
-      ],
-      "03:15 PM - 04:15 PM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec2", "room": "Lab 103" },
-        { "base": "CP", "course": "CP", "section": "Sec3", "room": "G08" }
-      ],
-      "04:30 PM - 05:30 PM": [
-        { "base": "DSMA", "course": "DSMA", "section": "Sec5", "room": "G04" }
-      ]
+    "UG1": {
+        "Monday": {
+            "Time Table": [
+                {
+                    "raw_text": "Monday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Monday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Monday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Monday",
+                    "branch": "ALL"
+                }
+            ],
+            "08:45 AM - 9:45AM": [
+                {
+                    "raw_text": "OCW4 G08 OCW1 LAB 103",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "PC2 B05 OOP4 G05 RANAC1 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ICS 110 BTA 111 EP 105",
+                    "branch": "ALL"
+                }
+            ],
+            "09:45 AM - 10:45 AM": [
+                {
+                    "raw_text": "OCW1 LAB 103 DSMA2 G08 DSMA3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RANAC2 G04 CS B03 ADSA1 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED2 G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "VAR 108 GNN-AI 105",
+                    "branch": "ALL"
+                }
+            ],
+            "11:00 AM - 12:00 PM": [
+                {
+                    "raw_text": "DLD2 G08 CP3 Lab 103 DLD1 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OS2 B03 DBMS1 G05 CNA G06 DBMS3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ML1 109 ML2 110 CD 111 FQC 112 PDS 108 DSP G04",
+                    "branch": "ALL"
+                }
+            ],
+            "12:00 PM - 01:00 PM": [
+                {
+                    "raw_text": "DSMA4 G07 CP3 Lab 103",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OS1 G04 OS3 G06 ML 109",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "AEM 105 MML 110 DE 111 ASM 112 MCD 108",
+                    "branch": "ALL"
+                }
+            ],
+            "02:15 PM - 03:15PM": [
+                {
+                    "raw_text": "OCW2 Lab 103 OCW3 G07 CP1 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS2 G04 ADSA3 G05 RANAC4 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED1 G06 MPMC 108",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "CRYPTO 110",
+                    "branch": "ALL"
+                }
+            ],
+            "03:15 PM - 04:15PM": [
+                {
+                    "raw_text": "OCW2 Lab 103 CP3 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RANAC3 G04 ADSA2 G05 OOP4 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED1 G06 OS 109 VLSI G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ANN 111 RI 105",
+                    "branch": "ALL"
+                }
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "raw_text": "DSMA5 G04",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OOP2 Lab 103 PC3 Lab B05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "EP 108 IDHV 112",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DSD 105 AE 104",
+                    "branch": "ALL"
+                }
+            ],
+            "05:30 PM - 06:30 PM": [
+                {
+                    "raw_text": "PC3 Lab B05 OOP2 Lab 103",
+                    "branch": "ALL"
+                }
+            ],
+            "UG3": [
+                {
+                    "raw_text": "PC,AI&DS",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [
+                {
+                    "raw_text": "PE, CSE and AI&DS",
+                    "branch": "ALL"
+                }
+            ]
+        },
+        "Tuesday": {
+            "Time Table": [
+                {
+                    "raw_text": "Tuesday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Tuesday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Tuesday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Tuesday",
+                    "branch": "ALL"
+                }
+            ],
+            "08:45 AM - 9:45AM": [
+                {
+                    "raw_text": "CP4 Lab 103 DLD1 Lab 114/102",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "PC1 B05 RANAC3 G05 CNA G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ML1 109 ML2 110 FQC 112 MCD 108 CD 105 OS 111",
+                    "branch": "ALL"
+                }
+            ],
+            "09:45 AM - 10:45 AM": [
+                {
+                    "raw_text": "CP4 Lab 103 DLD1 Lab 114/102 DSMA3 G08 OCW2 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OOP1 G04 CS G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DE 111 PR 108 ASM 104",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "GNN-AI 105 ADL 109",
+                    "branch": "ALL"
+                }
+            ],
+            "11:00 AM - 12:00 PM": [
+                {
+                    "raw_text": "DLD3 Lab 114/102 DLD2 G08 DLD4 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OOP3 Lab 103 DBMS1 G04 OOP2 G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IR 109 CC 110 HPC 111 NLP 108 MPMC 105 GDIT 112",
+                    "branch": "ALL"
+                }
+            ],
+            "12:00 PM - 01:00 PM": [
+                {
+                    "raw_text": "DLD3 Lab 114/102 OCW4 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OOP3 Lab 103 PC4 G04 RANAC2 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ICPS 105 IDA G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IDA G05",
+                    "branch": "ALL"
+                }
+            ],
+            "02:15 PM - 03:15PM": [
+                {
+                    "raw_text": "OCW3 Lab 103 DSMA2 G09 DLD1 B03",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OS1 G04 OS2 G05 OS3 G06 ML 108",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED2 G07 DSP G08 PDS 110",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DTCA 112 ANN 111 DL&CV 109",
+                    "branch": "ALL"
+                }
+            ],
+            "03:15 PM - 04:15PM": [
+                {
+                    "raw_text": "OCW3 Lab 103 CP2 G09 CP4 B03 DSMA1 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ADSA1 G04 ES LAB 114/102 ADSA3 G05 DBMS2 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED2 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "CRYPTO 104",
+                    "branch": "ALL"
+                }
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "raw_text": "CP1 G06 DSMA4 G09 OCW3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RANAC1 G08 ES LAB 114/102 PC3 B05 ADSA2 Lab 103",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "BDA 109 VLSI G04 DIP 112",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "BDA 109",
+                    "branch": "ALL"
+                }
+            ],
+            "05:30 PM - 06:30 PM": [
+                {
+                    "raw_text": "ADSA2 Lab 103",
+                    "branch": "ALL"
+                }
+            ],
+            "UG3": [
+                {
+                    "raw_text": "OS",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [
+                {
+                    "raw_text": "ADL",
+                    "branch": "ALL"
+                }
+            ]
+        },
+        "Wednesday": {
+            "Time Table": [
+                {
+                    "raw_text": "Wednesday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Wednesday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Wednesday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Wednesday",
+                    "branch": "ALL"
+                }
+            ],
+            "08:45 AM - 9:45AM": [
+                {
+                    "raw_text": "CP1 Lab 103 DLD4 LAB 114/102",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ADSA2 G04 CS G05 DBMS3 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IR 109 CC 110 HPC 111 GDIT 112 NLP 108",
+                    "branch": "ALL"
+                }
+            ],
+            "09:45 AM - 10:45 AM": [
+                {
+                    "raw_text": "CP1 Lab 103 DLD4 LAB 114/102 DLD3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ML 108 PC4 B05 OS2 G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IDHV 112 VLSI G09 MML 110",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DSD 105 CRYPTO 104",
+                    "branch": "ALL"
+                }
+            ],
+            "11:00 AM - 12:00 PM": [
+                {
+                    "raw_text": "OCW1 G09 CP2 G08 DLD4 G04",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ADSA1 G06 ADSA3 LAB 103 RANAC4 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED3 G05 OS 110",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ADL 109 VAR 108 GNN-AI 105",
+                    "branch": "ALL"
+                }
+            ],
+            "12:00 PM - 01:00 PM": [
+                {
+                    "raw_text": "DSMA5 G09 DSMA3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OOP1 G04 ADSA3 LAB 103",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED3 G05 PDS 104",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "AE 110",
+                    "branch": "ALL"
+                }
+            ],
+            "02:15 PM - 03:15PM": [
+                {
+                    "raw_text": "DLD4 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OOP4 G08 OOP3 G06 OOP1 Lab 103",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ICPS 105 IDA G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DTCA 112 IDA G05 DL&CV 109",
+                    "branch": "ALL"
+                }
+            ],
+            "03:15 PM - 04:15PM": [
+                {
+                    "raw_text": "DSMA4 G09 DLD2 G08 DSMA1 G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RANAC2 G04 OOP1 Lab 103 ES G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ML1 109 ML2 110 CD 111 FQC 112 MCD 105",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RI 108",
+                    "branch": "ALL"
+                }
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "raw_text": "EE2 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS3 LAB 103 PC1 Lab B05",
+                    "branch": "ALL"
+                }
+            ],
+            "05:30 PM - 06:30 PM": [
+                {
+                    "raw_text": "EE2 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS3 LAB 103 PC1 Lab B05",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [
+                {
+                    "raw_text": "Advanced Deep Learning",
+                    "branch": "ALL"
+                }
+            ]
+        },
+        "Thursday": {
+            "Time Table": [
+                {
+                    "raw_text": "Thursday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Thursday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Thursday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Thursday",
+                    "branch": "ALL"
+                }
+            ],
+            "08:45 AM - 9:45AM": [
+                {
+                    "raw_text": "OCW4 Lab 103 OCW1 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RANAC1 G09 RANAC4 G06 PC3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "AEM 109 DE 111",
+                    "branch": "ALL"
+                }
+            ],
+            "09:45 AM - 10:45 AM": [
+                {
+                    "raw_text": "OCW4 Lab 103 CP1 G09 CP3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "CNA G06 OOP2 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IoTA 108 ICS 110 BTA 111 DIP 112",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DSD 105 ADL 109",
+                    "branch": "ALL"
+                }
+            ],
+            "11:00 AM - 12:00 PM": [
+                {
+                    "raw_text": "DLD1 G09 CP2 lab 103 DLD3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS1 G06 CNA Lab 114/102 RANAC3 G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED1 G04 EP 110",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "AE 104",
+                    "branch": "ALL"
+                }
+            ],
+            "12:00 PM - 01:00 PM": [
+                {
+                    "raw_text": "CP2 lab 103 OCW4 G08 DSMA1 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "CNA Lab 114/102 OS1 G04 OS2 G05 ML 111",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "BDA 109 PR 108",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "BDA 109",
+                    "branch": "ALL"
+                }
+            ],
+            "02:15 PM - 03:15PM": [
+                {
+                    "raw_text": "OCW2 B05 CP4 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OOP4 Lab 103 OOP3 G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IR 109 CC 110 HPC 111 GDIT 112 NLP 108",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DTCA 105",
+                    "branch": "ALL"
+                }
+            ],
+            "03:15 PM - 04:15PM": [
+                {
+                    "raw_text": "DSMA5 G09 DSMA2 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "PC1 B05 OS3 G08 RANAC2 G04 OOP4 Lab 103",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED3 G05 DSP G06 OS 109",
+                    "branch": "ALL"
+                }
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "raw_text": "EDL1 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS2 LAB 103 CS G09 DBMS3 G06 OOP1 G04",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IoTA 109 ICS 110 BTA 111 DIP 112",
+                    "branch": "ALL"
+                }
+            ],
+            "05:30 PM - 06:30 PM": [
+                {
+                    "raw_text": "EDL1 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS2 LAB 103",
+                    "branch": "ALL"
+                }
+            ],
+            "UG3": [
+                {
+                    "raw_text": "Program Core AI&DS",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [
+                {
+                    "raw_text": "PE, CSE and AI&DS",
+                    "branch": "ALL"
+                }
+            ]
+        },
+        "Friday": {
+            "Time Table": [
+                {
+                    "raw_text": "Friday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Friday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Friday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Friday",
+                    "branch": "ALL"
+                }
+            ],
+            "08:45 AM - 9:45AM": [
+                {
+                    "raw_text": "OCW1 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RANAC3 G05 PC4 Lab B05 ADSA1 LAB 103",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DSP G06 IoTA 108 BDA 109",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "BDA 109",
+                    "branch": "ALL"
+                }
+            ],
+            "09:45 AM - 10:45 AM": [
+                {
+                    "raw_text": "DSMA4 G09 DSMA5 G08 DSMA2 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ADSA1 LAB 103 PC4 Lab B05 OS3 B04",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IDHV 112 VLSI G04 MML 110",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "VAR 108",
+                    "branch": "ALL"
+                }
+            ],
+            "11:00 AM - 12:00 PM": [
+                {
+                    "raw_text": "DLD3 G08 OCW2 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS2 G06 OS1 G07 ES B03",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED1 Lab G04 FDFED2 Lab 103 FDFED3 Lab G05 MPMC Lab 114/104 PDS 109",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ANN 111 DL&CV 104 RI 105",
+                    "branch": "ALL"
+                }
+            ],
+            "12:00 PM - 01:00 PM": [
+                {
+                    "raw_text": "CP3 G06 CP2 G09 DSMA1 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "PC2 B04 ADSA3 G08",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "FDFED1 Lab G04 FDFED2 Lab 103 FDFED3 Lab G05 MPMC Lab 114/104",
+                    "branch": "ALL"
+                }
+            ],
+            "02:15 PM - 03:15PM": [
+                {
+                    "raw_text": "CP4 G09 DSMA3 G08 DLD2 Lab 114/102",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "RANAC1 G04 ES G06 ADSA2 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "ICPS 105 IDA G05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "IDA G05",
+                    "branch": "ALL"
+                }
+            ],
+            "03:15 PM - 04:15PM": [
+                {
+                    "raw_text": "DLD2 Lab 114/102 OCW3 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS1 LAB 103 OOP3 G05 OOP2 G06 RANAC4 G04",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "AEM 109 ASM 112 PR 108",
+                    "branch": "ALL"
+                }
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "raw_text": "EE1 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "DBMS1 LAB 103 PC2 Lab B05",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "QRA 1 G09 GENAI 110",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "GENAI 110",
+                    "branch": "ALL"
+                }
+            ],
+            "05:30 PM - 06:30 PM": [
+                {
+                    "raw_text": "EE1 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "PC2 Lab B05",
+                    "branch": "ALL"
+                }
+            ],
+            "UG3": [
+                {
+                    "raw_text": "Dr. Pavan Kumar Perepu",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [
+                {
+                    "raw_text": "Dr.Shaik Mohammad Rafi",
+                    "branch": "ALL"
+                }
+            ]
+        },
+        "Saturday": {
+            "Time Table": [
+                {
+                    "raw_text": "Saturday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Saturday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Saturday",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "Saturday",
+                    "branch": "ALL"
+                }
+            ],
+            "08:45 AM - 9:45AM": [
+                {
+                    "raw_text": "FHVE 12345",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "QRA 2 G09 PGP2 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OB1 B03",
+                    "branch": "ALL"
+                }
+            ],
+            "09:45 AM - 10:45 AM": [
+                {
+                    "raw_text": "FHVE 12345",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "QRA 2 G09 PGP2 G07",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OB1 B03",
+                    "branch": "ALL"
+                }
+            ],
+            "11:00 AM - 12:00 PM": [
+                {
+                    "raw_text": "FHVE 12345",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "QRA 4 G09 SE2 G08 PGP1 G07 SE1 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OB2 B03",
+                    "branch": "ALL"
+                }
+            ],
+            "12:00 PM - 01:00 PM": [
+                {
+                    "raw_text": "FHVE 12345",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "QRA 4 G09 SE2 G08 PGP1 G07 SE1 G06",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "OB2 B03",
+                    "branch": "ALL"
+                }
+            ],
+            "02:15 PM - 03:15PM": [
+                {
+                    "raw_text": "FHVE 12345",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "QRA 3 G09 GENAI 105",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "GENAI",
+                    "branch": "ALL"
+                }
+            ],
+            "03:15 PM - 04:15PM": [
+                {
+                    "raw_text": "FHVE 12345",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "QRA 3 G09 GENAI 105",
+                    "branch": "ALL"
+                },
+                {
+                    "raw_text": "GENAI",
+                    "branch": "ALL"
+                }
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "raw_text": "EDL2 G04",
+                    "branch": "ALL"
+                }
+            ],
+            "05:30 PM - 06:30 PM": [
+                {
+                    "raw_text": "EDL2 G04",
+                    "branch": "ALL"
+                }
+            ],
+            "UG3": [
+                {
+                    "raw_text": "os@iiits.in",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [
+                {
+                    "raw_text": "adl@iiits.in",
+                    "branch": "ALL"
+                }
+            ]
+        }
     },
-    "Tuesday": {
-      "08:45 AM - 09:45 AM": [
-        { "base": "CP", "course": "CP", "section": "Sec4", "room": "Lab 103" },
-        { "base": "DLD", "course": "DLD", "section": "Sec1", "room": "Lab 114/102" }
-      ],
-      "09:45 AM - 10:45 AM": [
-        { "base": "CP", "course": "CP", "section": "Sec4", "room": "Lab 103" },
-        { "base": "DLD", "course": "DLD", "section": "Sec1", "room": "Lab 114/102" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec3", "room": "G08" },
-        { "base": "OCW", "course": "OCW", "section": "Sec2", "room": "G09" }
-      ],
-      "11:00 AM - 12:00 PM": [
-        { "base": "DLD", "course": "DLD", "section": "Sec3", "room": "Lab 114/102" },
-        { "base": "DLD", "course": "DLD", "section": "Sec2", "room": "G08" },
-        { "base": "DLD", "course": "DLD", "section": "Sec4", "room": "G09" }
-      ],
-      "12:00 PM - 01:00 PM": [
-        { "base": "DLD", "course": "DLD", "section": "Sec3", "room": "Lab 114/102" },
-        { "base": "OCW", "course": "OCW", "section": "Sec4", "room": "G08" }
-      ],
-      "02:15 PM - 03:15 PM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec3", "room": "Lab 103" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec2", "room": "G09" },
-        { "base": "DLD", "course": "DLD", "section": "Sec1", "room": "B03" }
-      ],
-      "03:15 PM - 04:15 PM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec3", "room": "Lab 103" },
-        { "base": "CP", "course": "CP", "section": "Sec2", "room": "G09" },
-        { "base": "CP", "course": "CP", "section": "Sec4", "room": "B03" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec1", "room": "G08" }
-      ],
-      "04:30 PM - 05:30 PM": [
-        { "base": "CP", "course": "CP", "section": "Sec1", "room": "G06" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec4", "room": "G09" },
-        { "base": "OCW", "course": "OCW", "section": "Sec3", "room": "G07" }
-      ]
-    },
-    "Wednesday": {
-      "08:45 AM - 09:45 AM": [
-        { "base": "CP", "course": "CP", "section": "Sec1", "room": "Lab 103" },
-        { "base": "DLD", "course": "DLD", "section": "Sec4", "room": "LAB 114/102" }
-      ],
-      "09:45 AM - 10:45 AM": [
-        { "base": "CP", "course": "CP", "section": "Sec1", "room": "Lab 103" },
-        { "base": "DLD", "course": "DLD", "section": "Sec4", "room": "LAB 114/102" },
-        { "base": "DLD", "course": "DLD", "section": "Sec3", "room": "G07" }
-      ],
-      "11:00 AM - 12:00 PM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec1", "room": "G09" },
-        { "base": "CP", "course": "CP", "section": "Sec2", "room": "G08" },
-        { "base": "DLD", "course": "DLD", "section": "Sec4", "room": "G04" }
-      ],
-      "12:00 PM - 01:00 PM": [
-        { "base": "DSMA", "course": "DSMA", "section": "Sec5", "room": "G09" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec3", "room": "G07" }
-      ],
-      "02:15 PM - 03:15 PM": [
-        { "base": "DLD", "course": "DLD", "section": "Sec4", "room": "G09" }
-      ],
-      "03:15 PM - 04:15 PM": [
-        { "base": "DSMA", "course": "DSMA", "section": "Sec4", "room": "G09" },
-        { "base": "DLD", "course": "DLD", "section": "Sec2", "room": "G08" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec1", "room": "G05" }
-      ],
-      "04:30 PM - 05:30 PM": [
-        { "base": "EE", "course": "EE", "section": "Sec2", "room": "G08" }
-      ],
-      "05:30 PM - 06:30 PM": [
-        { "base": "EE", "course": "EE", "section": "Sec2", "room": "G08" }
-      ]
-    },
-    "Thursday": {
-      "08:45 AM - 09:45 AM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec4", "room": "Lab 103" },
-        { "base": "OCW", "course": "OCW", "section": "Sec1", "room": "G08" }
-      ],
-      "09:45 AM - 10:45 AM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec4", "room": "Lab 103" },
-        { "base": "CP", "course": "CP", "section": "Sec1", "room": "G09" },
-        { "base": "CP", "course": "CP", "section": "Sec3", "room": "G07" }
-      ],
-      "11:00 AM - 12:00 PM": [
-        { "base": "DLD", "course": "DLD", "section": "Sec1", "room": "G09" },
-        { "base": "CP", "course": "CP", "section": "Sec2", "room": "lab 103" },
-        { "base": "DLD", "course": "DLD", "section": "Sec3", "room": "G07" }
-      ],
-      "12:00 PM - 01:00 PM": [
-        { "base": "CP", "course": "CP", "section": "Sec2", "room": "lab 103" },
-        { "base": "OCW", "course": "OCW", "section": "Sec4", "room": "G08" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec1", "room": "G09" }
-      ],
-      "02:15 PM - 03:15 PM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec2", "room": "B05" },
-        { "base": "CP", "course": "CP", "section": "Sec4", "room": "G08" }
-      ],
-      "03:15 PM - 04:15 PM": [
-        { "base": "DSMA", "course": "DSMA", "section": "Sec5", "room": "G09" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec2", "room": "G07" }
-      ],
-      "04:30 PM - 05:30 PM": [
-        { "base": "EDL", "course": "EDL", "section": "Sec1", "room": "G08" }
-      ],
-      "05:30 PM - 06:30 PM": [
-        { "base": "EDL", "course": "EDL", "section": "Sec1", "room": "G08" }
-      ]
-    },
-    "Friday": {
-      "08:45 AM - 09:45 AM": [
-        { "base": "OCW", "course": "OCW", "section": "Sec1", "room": "G09" }
-      ],
-      "09:45 AM - 10:45 AM": [
-        { "base": "DSMA", "course": "DSMA", "section": "Sec4", "room": "G09" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec5", "room": "G08" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec2", "room": "G07" }
-      ],
-      "11:00 AM - 12:00 PM": [
-        { "base": "DLD", "course": "DLD", "section": "Sec3", "room": "G08" },
-        { "base": "OCW", "course": "OCW", "section": "Sec2", "room": "G09" }
-      ],
-      "12:00 PM - 01:00 PM": [
-        { "base": "CP", "course": "CP", "section": "Sec3", "room": "G06" },
-        { "base": "CP", "course": "CP", "section": "Sec2", "room": "G09" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec1", "room": "G07" }
-      ],
-      "02:15 PM - 03:15 PM": [
-        { "base": "CP", "course": "CP", "section": "Sec4", "room": "G09" },
-        { "base": "DSMA", "course": "DSMA", "section": "Sec3", "room": "G08" },
-        { "base": "DLD", "course": "DLD", "section": "Sec2", "room": "Lab 114/102" }
-      ],
-      "03:15 PM - 04:15 PM": [
-        { "base": "DLD", "course": "DLD", "section": "Sec2", "room": "Lab 114/102" },
-        { "base": "OCW", "course": "OCW", "section": "Sec3", "room": "G07" }
-      ],
-      "04:30 PM - 05:30 PM": [
-        { "base": "EE", "course": "EE", "section": "Sec1", "room": "G06" }
-      ],
-      "05:30 PM - 06:30 PM": [
-        { "base": "EE", "course": "EE", "section": "Sec1", "room": "G06" }
-      ]
-    },
-    "Saturday": {
-      "08:45 AM - 09:45 AM": [
-        { "base": "FHVE", "course": "FHVE", "branch": "ALL", "room": "TBD" }
-      ],
-      "09:45 AM - 10:45 AM": [
-        { "base": "FHVE", "course": "FHVE", "branch": "ALL", "room": "TBD" }
-      ],
-      "11:00 AM - 12:00 PM": [
-        { "base": "FHVE", "course": "FHVE", "branch": "ALL", "room": "TBD" }
-      ],
-      "12:00 PM - 01:00 PM": [
-        { "base": "FHVE", "course": "FHVE", "branch": "ALL", "room": "TBD" }
-      ],
-      "02:15 PM - 03:15 PM": [
-        { "base": "FHVE", "course": "FHVE", "branch": "ALL", "room": "TBD" }
-      ],
-      "03:15 PM - 04:15 PM": [
-        { "base": "FHVE", "course": "FHVE", "branch": "ALL", "room": "TBD" }
-      ],
-      "04:30 PM - 05:30 PM": [
-        { "base": "EDL", "course": "EDL", "section": "Sec2", "room": "G04" }
-      ],
-      "05:30 PM - 06:30 PM": [
-        { "base": "EDL", "course": "EDL", "section": "Sec2", "room": "G04" }
-      ]
-    }
-  }
+    "UG2": {},
+    "UG3": {},
+    "UG4": {}
 }
