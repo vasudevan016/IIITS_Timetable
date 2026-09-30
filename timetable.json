@@ -1,37 +1,7 @@
 {
     "UG1": {
         "Monday": {
-            "Time Table": [
-                {
-                    "course": "Monday",
-                    "base": "MONDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Monday",
-                    "base": "MONDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
-                {
-                    "course": "OCW4",
-                    "base": "OCW",
-                    "section": "Sec4",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW1",
-                    "base": "OCW",
-                    "section": "Sec1",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "PC2",
                     "base": "PC",
@@ -56,27 +26,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "OCW1",
-                    "base": "OCW",
-                    "section": "Sec1",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA2",
-                    "base": "DSMA",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA3",
-                    "base": "DSMA",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
                     "course": "RANAC2",
                     "base": "RANAC",
                     "section": "Sec2",
@@ -99,27 +48,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "DLD2",
-                    "base": "DLD",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP3",
-                    "base": "CP",
-                    "section": "Sec3",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD1",
-                    "base": "DLD",
-                    "section": "Sec1",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
                 {
                     "course": "OS2",
                     "base": "OS",
@@ -151,20 +79,6 @@
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "DSMA4",
-                    "base": "DSMA",
-                    "section": "Sec4",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP3",
-                    "base": "CP",
-                    "section": "Sec3",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
                     "course": "OS1",
                     "base": "OS",
                     "section": "Sec1",
@@ -186,28 +100,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "OCW2",
-                    "base": "OCW",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW3",
-                    "base": "OCW",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP1",
-                    "base": "CP",
-                    "section": "Sec1",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "DBMS2",
                     "base": "DBMS",
@@ -230,21 +123,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "OCW2",
-                    "base": "OCW",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP3",
-                    "base": "CP",
-                    "section": "Sec3",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "RANAC3",
                     "base": "RANAC",
@@ -268,13 +147,6 @@
                 }
             ],
             "04:30 PM - 05:30 PM": [
-                {
-                    "course": "DSMA5",
-                    "base": "DSMA",
-                    "section": "Sec5",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
                 {
                     "course": "OOP2",
                     "base": "OOP",
@@ -308,37 +180,7 @@
             ]
         },
         "Tuesday": {
-            "Time Table": [
-                {
-                    "course": "Tuesday",
-                    "base": "TUESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Tuesday",
-                    "base": "TUESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
-                {
-                    "course": "CP4",
-                    "base": "CP",
-                    "section": "Sec4",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD1",
-                    "base": "DLD",
-                    "section": "Sec1",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
-                },
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "PC1",
                     "base": "PC",
@@ -363,34 +205,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "CP4",
-                    "base": "CP",
-                    "section": "Sec4",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD1",
-                    "base": "DLD",
-                    "section": "Sec1",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA3",
-                    "base": "DSMA",
-                    "section": "Sec3",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW2",
-                    "base": "OCW",
-                    "section": "Sec2",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
                     "course": "OOP1",
                     "base": "OOP",
                     "section": "Sec1",
@@ -406,27 +220,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "DLD3",
-                    "base": "DLD",
-                    "section": "Sec3",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD2",
-                    "base": "DLD",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD4",
-                    "base": "DLD",
-                    "section": "Sec4",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
                 {
                     "course": "OOP3",
                     "base": "OOP",
@@ -451,20 +244,6 @@
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "DLD3",
-                    "base": "DLD",
-                    "section": "Sec3",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW4",
-                    "base": "OCW",
-                    "section": "Sec4",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
                     "course": "OOP3",
                     "base": "OOP",
                     "section": "Sec3",
@@ -486,28 +265,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "OCW3",
-                    "base": "OCW",
-                    "section": "Sec3",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA2",
-                    "base": "DSMA",
-                    "section": "Sec2",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD1",
-                    "base": "DLD",
-                    "section": "Sec1",
-                    "room": "B03",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "OS1",
                     "base": "OS",
@@ -537,35 +295,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "OCW3",
-                    "base": "OCW",
-                    "section": "Sec3",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP2",
-                    "base": "CP",
-                    "section": "Sec2",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP4",
-                    "base": "CP",
-                    "section": "Sec4",
-                    "room": "B03",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA1",
-                    "base": "DSMA",
-                    "section": "Sec1",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "ADSA1",
                     "base": "ADSA",
@@ -596,27 +326,6 @@
                 }
             ],
             "04:30 PM - 05:30 PM": [
-                {
-                    "course": "CP1",
-                    "base": "CP",
-                    "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA4",
-                    "base": "DSMA",
-                    "section": "Sec4",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW3",
-                    "base": "OCW",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
                 {
                     "course": "RANAC1",
                     "base": "RANAC",
@@ -657,37 +366,7 @@
             ]
         },
         "Wednesday": {
-            "Time Table": [
-                {
-                    "course": "Wednesday",
-                    "base": "WEDNESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Wednesday",
-                    "base": "WEDNESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
-                {
-                    "course": "CP1",
-                    "base": "CP",
-                    "section": "Sec1",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD4",
-                    "base": "DLD",
-                    "section": "Sec4",
-                    "room": "LAB 114/102",
-                    "branch": "ALL"
-                },
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "ADSA2",
                     "base": "ADSA",
@@ -712,27 +391,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "CP1",
-                    "base": "CP",
-                    "section": "Sec1",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD4",
-                    "base": "DLD",
-                    "section": "Sec4",
-                    "room": "LAB 114/102",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD3",
-                    "base": "DLD",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
                     "course": "ML",
                     "base": "ML",
                     "section": "",
@@ -755,27 +413,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "OCW1",
-                    "base": "OCW",
-                    "section": "Sec1",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP2",
-                    "base": "CP",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD4",
-                    "base": "DLD",
-                    "section": "Sec4",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
                 {
                     "course": "ADSA1",
                     "base": "ADSA",
@@ -800,20 +437,6 @@
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "DSMA5",
-                    "base": "DSMA",
-                    "section": "Sec5",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA3",
-                    "base": "DSMA",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
                     "course": "OOP1",
                     "base": "OOP",
                     "section": "Sec1",
@@ -828,14 +451,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "DLD4",
-                    "base": "DLD",
-                    "section": "Sec4",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "OOP4",
                     "base": "OOP",
@@ -858,28 +474,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "DSMA4",
-                    "base": "DSMA",
-                    "section": "Sec4",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD2",
-                    "base": "DLD",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA1",
-                    "base": "DSMA",
-                    "section": "Sec1",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "RANAC2",
                     "base": "RANAC",
@@ -904,13 +499,6 @@
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "EE2",
-                    "base": "EE",
-                    "section": "",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
                     "course": "DBMS3",
                     "base": "DBMS",
                     "section": "Sec3",
@@ -926,13 +514,6 @@
                 }
             ],
             "05:30 PM - 06:30 PM": [
-                {
-                    "course": "EE2",
-                    "base": "EE",
-                    "section": "",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
                 {
                     "course": "DBMS3",
                     "base": "DBMS",
@@ -950,37 +531,7 @@
             ]
         },
         "Thursday": {
-            "Time Table": [
-                {
-                    "course": "Thursday",
-                    "base": "THURSDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Thursday",
-                    "base": "THURSDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
-                {
-                    "course": "OCW4",
-                    "base": "OCW",
-                    "section": "Sec4",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW1",
-                    "base": "OCW",
-                    "section": "Sec1",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "RANAC1",
                     "base": "RANAC",
@@ -1005,27 +556,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "OCW4",
-                    "base": "OCW",
-                    "section": "Sec4",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP1",
-                    "base": "CP",
-                    "section": "Sec1",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP3",
-                    "base": "CP",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
                     "course": "CNA",
                     "base": "CNA",
                     "section": "",
@@ -1041,27 +571,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "DLD1",
-                    "base": "DLD",
-                    "section": "Sec1",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP2",
-                    "base": "CP",
-                    "section": "Sec2",
-                    "room": "lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD3",
-                    "base": "DLD",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
                 {
                     "course": "DBMS1",
                     "base": "DBMS",
@@ -1085,27 +594,6 @@
                 }
             ],
             "12:00 PM - 01:00 PM": [
-                {
-                    "course": "CP2",
-                    "base": "CP",
-                    "section": "Sec2",
-                    "room": "lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW4",
-                    "base": "OCW",
-                    "section": "Sec4",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA1",
-                    "base": "DSMA",
-                    "section": "Sec1",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
                 {
                     "course": "CNA",
                     "base": "CNA",
@@ -1135,21 +623,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "OCW2",
-                    "base": "OCW",
-                    "section": "Sec2",
-                    "room": "B05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP4",
-                    "base": "CP",
-                    "section": "Sec4",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "OOP4",
                     "base": "OOP",
@@ -1165,21 +639,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "DSMA5",
-                    "base": "DSMA",
-                    "section": "Sec5",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA2",
-                    "base": "DSMA",
-                    "section": "Sec2",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "PC1",
                     "base": "PC",
@@ -1211,13 +671,6 @@
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "EDL1",
-                    "base": "EDL",
-                    "section": "",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
                     "course": "DBMS2",
                     "base": "DBMS",
                     "section": "Sec2",
@@ -1248,13 +701,6 @@
             ],
             "05:30 PM - 06:30 PM": [
                 {
-                    "course": "EDL1",
-                    "base": "EDL",
-                    "section": "",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
                     "course": "DBMS2",
                     "base": "DBMS",
                     "section": "Sec2",
@@ -1264,30 +710,7 @@
             ]
         },
         "Friday": {
-            "Time Table": [
-                {
-                    "course": "Friday",
-                    "base": "FRIDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Friday",
-                    "base": "FRIDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
-                {
-                    "course": "OCW1",
-                    "base": "OCW",
-                    "section": "Sec1",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "RANAC3",
                     "base": "RANAC",
@@ -1312,27 +735,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "DSMA4",
-                    "base": "DSMA",
-                    "section": "Sec4",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA5",
-                    "base": "DSMA",
-                    "section": "Sec5",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA2",
-                    "base": "DSMA",
-                    "section": "Sec2",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
                     "course": "ADSA1",
                     "base": "ADSA",
                     "section": "Sec1",
@@ -1355,20 +757,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "DLD3",
-                    "base": "DLD",
-                    "section": "Sec3",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW2",
-                    "base": "OCW",
-                    "section": "Sec2",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
                 {
                     "course": "DBMS2",
                     "base": "DBMS",
@@ -1393,27 +781,6 @@
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "CP3",
-                    "base": "CP",
-                    "section": "Sec3",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CP2",
-                    "base": "CP",
-                    "section": "Sec2",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA1",
-                    "base": "DSMA",
-                    "section": "Sec1",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
                     "course": "PC2",
                     "base": "PC",
                     "section": "Sec2",
@@ -1428,28 +795,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "CP4",
-                    "base": "CP",
-                    "section": "Sec4",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSMA3",
-                    "base": "DSMA",
-                    "section": "Sec3",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DLD2",
-                    "base": "DLD",
-                    "section": "Sec2",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "RANAC1",
                     "base": "RANAC",
@@ -1472,21 +818,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "DLD2",
-                    "base": "DLD",
-                    "section": "Sec2",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OCW3",
-                    "base": "OCW",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "DBMS1",
                     "base": "DBMS",
@@ -1518,13 +850,6 @@
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "EE1",
-                    "base": "EE",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
                     "course": "DBMS1",
                     "base": "DBMS",
                     "section": "Sec1",
@@ -1541,13 +866,6 @@
             ],
             "05:30 PM - 06:30 PM": [
                 {
-                    "course": "EE1",
-                    "base": "EE",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
                     "course": "PC2",
                     "base": "PC",
                     "section": "Sec2",
@@ -1557,23 +875,7 @@
             ]
         },
         "Saturday": {
-            "Time Table": [
-                {
-                    "course": "Saturday",
-                    "base": "SATURDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Saturday",
-                    "base": "SATURDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "FHVE",
                     "base": "FHVE",
@@ -1609,7 +911,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "FHVE",
                     "base": "FHVE",
@@ -1618,7 +920,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "FHVE",
                     "base": "FHVE",
@@ -1631,7 +933,7 @@
                 {
                     "course": "EDL2",
                     "base": "EDL",
-                    "section": "",
+                    "section": "Sec2",
                     "room": "G04",
                     "branch": "ALL"
                 }
@@ -1640,7 +942,7 @@
                 {
                     "course": "EDL2",
                     "base": "EDL",
-                    "section": "",
+                    "section": "Sec2",
                     "room": "G04",
                     "branch": "ALL"
                 }
@@ -1649,23 +951,7 @@
     },
     "UG2": {
         "Monday": {
-            "Time Table": [
-                {
-                    "course": "Monday",
-                    "base": "MONDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Monday",
-                    "base": "MONDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "ICS",
                     "base": "ICS",
@@ -1689,13 +975,6 @@
                 }
             ],
             "09:45 AM - 10:45 AM": [
-                {
-                    "course": "FDFED2",
-                    "base": "FDFED",
-                    "section": "Sec2",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
                 {
                     "course": "VAR",
                     "base": "VAR",
@@ -1792,21 +1071,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "FDFED1",
-                    "base": "FDFED",
-                    "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MPMC",
-                    "base": "MPMC",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "CRYPTO",
                     "base": "CRYPTO",
@@ -1815,28 +1080,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "FDFED1",
-                    "base": "FDFED",
-                    "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS",
-                    "base": "OS",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "VLSI",
-                    "base": "VLSI",
-                    "section": "",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "ANN",
                     "base": "ANN",
@@ -1853,20 +1097,6 @@
                 }
             ],
             "04:30 PM - 05:30 PM": [
-                {
-                    "course": "EP",
-                    "base": "EP",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "IDHV",
-                    "base": "IDHV",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
                 {
                     "course": "DSD",
                     "base": "DSD",
@@ -1884,23 +1114,7 @@
             ]
         },
         "Tuesday": {
-            "Time Table": [
-                {
-                    "course": "Tuesday",
-                    "base": "TUESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Tuesday",
-                    "base": "TUESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "ML1",
                     "base": "ML",
@@ -1945,27 +1159,6 @@
                 }
             ],
             "09:45 AM - 10:45 AM": [
-                {
-                    "course": "DE",
-                    "base": "DE",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PR",
-                    "base": "PR",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ASM",
-                    "base": "ASM",
-                    "section": "",
-                    "room": "104",
-                    "branch": "ALL"
-                },
                 {
                     "course": "GNN-AI",
                     "base": "GNN-AI",
@@ -2027,20 +1220,6 @@
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "ICPS",
-                    "base": "ICPS",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "IDA",
-                    "base": "IDA",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
                     "course": "IDA",
                     "base": "IDA",
                     "section": "",
@@ -2048,28 +1227,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "FDFED2",
-                    "base": "FDFED",
-                    "section": "Sec2",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSP",
-                    "base": "DSP",
-                    "section": "",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PDS",
-                    "base": "PDS",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "DTCA",
                     "base": "DTCA",
@@ -2092,14 +1250,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "FDFED2",
-                    "base": "FDFED",
-                    "section": "Sec2",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "CRYPTO",
                     "base": "CRYPTO",
@@ -2115,48 +1266,11 @@
                     "section": "",
                     "room": "109",
                     "branch": "ALL"
-                },
-                {
-                    "course": "VLSI",
-                    "base": "VLSI",
-                    "section": "",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DIP",
-                    "base": "DIP",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "BDA",
-                    "base": "BDA",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
                 }
             ]
         },
         "Wednesday": {
-            "Time Table": [
-                {
-                    "course": "Wednesday",
-                    "base": "WEDNESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Wednesday",
-                    "base": "WEDNESDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "IR",
                     "base": "IR",
@@ -2195,27 +1309,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "IDHV",
-                    "base": "IDHV",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "VLSI",
-                    "base": "VLSI",
-                    "section": "",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MML",
-                    "base": "MML",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
                     "course": "DSD",
                     "base": "DSD",
                     "section": "",
@@ -2231,20 +1324,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "FDFED3",
-                    "base": "FDFED",
-                    "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS",
-                    "base": "OS",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
                 {
                     "course": "ADL",
                     "base": "ADL",
@@ -2269,20 +1348,6 @@
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "FDFED3",
-                    "base": "FDFED",
-                    "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PDS",
-                    "base": "PDS",
-                    "section": "",
-                    "room": "104",
-                    "branch": "ALL"
-                },
-                {
                     "course": "AE",
                     "base": "AE",
                     "section": "",
@@ -2290,21 +1355,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "ICPS",
-                    "base": "ICPS",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "IDA",
-                    "base": "IDA",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "DTCA",
                     "base": "DTCA",
@@ -2327,42 +1378,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "ML1",
-                    "base": "ML",
-                    "section": "Sec1",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ML2",
-                    "base": "ML",
-                    "section": "Sec2",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CD",
-                    "base": "CD",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "FQC",
-                    "base": "FQC",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MCD",
-                    "base": "MCD",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "RI",
                     "base": "RI",
@@ -2373,23 +1389,7 @@
             ]
         },
         "Thursday": {
-            "Time Table": [
-                {
-                    "course": "Thursday",
-                    "base": "THURSDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Thursday",
-                    "base": "THURSDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "AEM",
                     "base": "AEM",
@@ -2407,34 +1407,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "IOTA",
-                    "base": "IOTA",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ICS",
-                    "base": "ICS",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "BTA",
-                    "base": "BTA",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DIP",
-                    "base": "DIP",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
                     "course": "DSD",
                     "base": "DSD",
                     "section": "",
@@ -2451,20 +1423,6 @@
             ],
             "11:00 AM - 12:00 PM": [
                 {
-                    "course": "FDFED1",
-                    "base": "FDFED",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "EP",
-                    "base": "EP",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
                     "course": "AE",
                     "base": "AE",
                     "section": "",
@@ -2479,58 +1437,9 @@
                     "section": "",
                     "room": "109",
                     "branch": "ALL"
-                },
-                {
-                    "course": "PR",
-                    "base": "PR",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "BDA",
-                    "base": "BDA",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "IR",
-                    "base": "IR",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CC",
-                    "base": "CC",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "HPC",
-                    "base": "HPC",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GDIT",
-                    "base": "GDIT",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "NLP",
-                    "base": "NLP",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "DTCA",
                     "base": "DTCA",
@@ -2539,7 +1448,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "FDFED3",
                     "base": "FDFED",
@@ -2594,44 +1503,7 @@
             ]
         },
         "Friday": {
-            "Time Table": [
-                {
-                    "course": "Friday",
-                    "base": "FRIDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Friday",
-                    "base": "FRIDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
-                {
-                    "course": "DSP",
-                    "base": "DSP",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "IOTA",
-                    "base": "IOTA",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "BDA",
-                    "base": "BDA",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "BDA",
                     "base": "BDA",
@@ -2642,27 +1514,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "IDHV",
-                    "base": "IDHV",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "VLSI",
-                    "base": "VLSI",
-                    "section": "",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MML",
-                    "base": "MML",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
                     "course": "VAR",
                     "base": "VAR",
                     "section": "",
@@ -2671,41 +1522,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "FDFED1",
-                    "base": "FDFED",
-                    "section": "Sec1",
-                    "room": "Lab G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "FDFED2",
-                    "base": "FDFED",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "FDFED3",
-                    "base": "FDFED",
-                    "section": "Sec3",
-                    "room": "Lab G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MPMC",
-                    "base": "MPMC",
-                    "section": "",
-                    "room": "Lab 114/104",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PDS",
-                    "base": "PDS",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
                 {
                     "course": "ANN",
                     "base": "ANN",
@@ -2758,21 +1574,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "ICPS",
-                    "base": "ICPS",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "IDA",
-                    "base": "IDA",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "IDA",
                     "base": "IDA",
@@ -2781,7 +1583,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "AEM",
                     "base": "AEM",
@@ -2806,20 +1608,6 @@
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "QRA",
-                    "base": "QRA",
-                    "section": "",
-                    "room": "1 G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GENAI",
-                    "base": "GENAI",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
                     "course": "GENAI",
                     "base": "GENAI",
                     "section": "",
@@ -2829,37 +1617,7 @@
             ]
         },
         "Saturday": {
-            "Time Table": [
-                {
-                    "course": "Saturday",
-                    "base": "SATURDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "Saturday",
-                    "base": "SATURDAY",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "08:45 AM - 9:45AM": [
-                {
-                    "course": "QRA",
-                    "base": "QRA",
-                    "section": "",
-                    "room": "2 G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PGP2",
-                    "base": "PGP",
-                    "section": "",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
+            "08:45 AM - 09:45 AM": [
                 {
                     "course": "OB1",
                     "base": "OB",
@@ -2870,20 +1628,6 @@
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "QRA",
-                    "base": "QRA",
-                    "section": "",
-                    "room": "2 G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PGP2",
-                    "base": "PGP",
-                    "section": "",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
                     "course": "OB1",
                     "base": "OB",
                     "section": "Sec1",
@@ -2892,34 +1636,6 @@
                 }
             ],
             "11:00 AM - 12:00 PM": [
-                {
-                    "course": "QRA",
-                    "base": "QRA",
-                    "section": "",
-                    "room": "4 G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "SE2",
-                    "base": "SE",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PGP1",
-                    "base": "PGP",
-                    "section": "",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "SE1",
-                    "base": "SE",
-                    "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
                 {
                     "course": "OB2",
                     "base": "OB",
@@ -2930,34 +1646,6 @@
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "QRA",
-                    "base": "QRA",
-                    "section": "",
-                    "room": "4 G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "SE2",
-                    "base": "SE",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PGP1",
-                    "base": "PGP",
-                    "section": "",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "SE1",
-                    "base": "SE",
-                    "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
                     "course": "OB2",
                     "base": "OB",
                     "section": "Sec2",
@@ -2965,21 +1653,7 @@
                     "branch": "ALL"
                 }
             ],
-            "02:15 PM - 03:15PM": [
-                {
-                    "course": "QRA",
-                    "base": "QRA",
-                    "section": "",
-                    "room": "3 G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GENAI",
-                    "base": "GENAI",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
+            "02:15 PM - 03:15 PM": [
                 {
                     "course": "GENAI",
                     "base": "GENAI",
@@ -2988,21 +1662,7 @@
                     "branch": "ALL"
                 }
             ],
-            "03:15 PM - 04:15PM": [
-                {
-                    "course": "QRA",
-                    "base": "QRA",
-                    "section": "",
-                    "room": "3 G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GENAI",
-                    "base": "GENAI",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
+            "03:15 PM - 04:15 PM": [
                 {
                     "course": "GENAI",
                     "base": "GENAI",
@@ -3013,143 +1673,6 @@
             ]
         }
     },
-    "UG3": {
-        "Monday": {
-            "UG3": [
-                {
-                    "course": "PC,AI&DS",
-                    "base": "PC,AI&DS",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Tuesday": {
-            "UG3": [
-                {
-                    "course": "OS",
-                    "base": "OS",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Thursday": {
-            "UG3": [
-                {
-                    "course": "PROGRAM",
-                    "base": "PROGRAM",
-                    "section": "",
-                    "room": "Core",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "AI&DS",
-                    "base": "AI&DS",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Friday": {
-            "UG3": [
-                {
-                    "course": "Dr.",
-                    "base": "DR.",
-                    "section": "",
-                    "room": "Pavan Kumar Perepu",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Saturday": {
-            "UG3": [
-                {
-                    "course": "os@iiits.in",
-                    "base": "OS@IIITS.IN",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        }
-    },
-    "UG4": {
-        "Monday": {
-            "UG4": [
-                {
-                    "course": "PE,",
-                    "base": "PE,",
-                    "section": "",
-                    "room": "CSE and",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "AI&DS",
-                    "base": "AI&DS",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Tuesday": {
-            "UG4": [
-                {
-                    "course": "ADL",
-                    "base": "ADL",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Wednesday": {
-            "UG4": [
-                {
-                    "course": "ADVANCED",
-                    "base": "ADVANCED",
-                    "section": "",
-                    "room": "Deep Learning",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Thursday": {
-            "UG4": [
-                {
-                    "course": "PE,",
-                    "base": "PE,",
-                    "section": "",
-                    "room": "CSE and AI&DS",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Friday": {
-            "UG4": [
-                {
-                    "course": "Dr.Shaik",
-                    "base": "DR.SHAIK",
-                    "section": "",
-                    "room": "Mohammad Rafi",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Saturday": {
-            "UG4": [
-                {
-                    "course": "adl@iiits.in",
-                    "base": "ADL@IIITS.IN",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        }
-    }
+    "UG3": {},
+    "UG4": {}
 }
