@@ -1,6 +1,9 @@
 {
     "UG1": {
         "Monday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 1": [],
             "Time Table": [
                 {
                     "course": "Monday",
@@ -17,7 +20,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "OCW4",
                     "base": "OCW",
@@ -186,6 +189,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "OCW2",
@@ -292,6 +296,13 @@
             ],
             "05:30 PM - 06:30 PM": [
                 {
+                    "course": "DSMA5",
+                    "base": "DSMA",
+                    "section": "Sec5",
+                    "room": "G04",
+                    "branch": ""
+                },
+                {
                     "course": "PC3",
                     "base": "PC",
                     "section": "Sec3",
@@ -305,9 +316,13 @@
                     "room": "Lab 103",
                     "branch": ""
                 }
-            ]
+            ],
+            "UG 2": []
         },
         "Tuesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 1": [],
             "Time Table": [
                 {
                     "course": "Tuesday",
@@ -324,7 +339,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "CP4",
                     "base": "CP",
@@ -486,6 +501,7 @@
                     "branch": ""
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "OCW3",
@@ -648,15 +664,40 @@
             ],
             "05:30 PM - 06:30 PM": [
                 {
+                    "course": "CP1",
+                    "base": "CP",
+                    "section": "Sec1",
+                    "room": "G06",
+                    "branch": ""
+                },
+                {
+                    "course": "DSMA4",
+                    "base": "DSMA",
+                    "section": "Sec4",
+                    "room": "G09",
+                    "branch": ""
+                },
+                {
+                    "course": "OCW3",
+                    "base": "OCW",
+                    "section": "Sec3",
+                    "room": "G07",
+                    "branch": ""
+                },
+                {
                     "course": "ADSA2",
                     "base": "ADSA",
                     "section": "Sec2",
                     "room": "Lab 103",
                     "branch": ""
                 }
-            ]
+            ],
+            "UG 2": []
         },
         "Wednesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 1": [],
             "Time Table": [
                 {
                     "course": "Wednesday",
@@ -673,7 +714,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "CP1",
                     "base": "CP",
@@ -828,6 +869,7 @@
                     "branch": ""
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "DLD4",
@@ -947,9 +989,13 @@
                     "room": "Lab B05",
                     "branch": ""
                 }
-            ]
+            ],
+            "UG 2": []
         },
         "Thursday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 1": [],
             "Time Table": [
                 {
                     "course": "Thursday",
@@ -966,7 +1012,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "OCW4",
                     "base": "OCW",
@@ -1135,6 +1181,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "OCW2",
@@ -1261,9 +1308,13 @@
                     "room": "LAB 103",
                     "branch": ""
                 }
-            ]
+            ],
+            "UG 2": []
         },
         "Friday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 1": [],
             "Time Table": [
                 {
                     "course": "Friday",
@@ -1280,7 +1331,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "OCW1",
                     "base": "OCW",
@@ -1428,6 +1479,7 @@
                     "branch": ""
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "CP4",
@@ -1554,9 +1606,13 @@
                     "room": "Lab B05",
                     "branch": ""
                 }
-            ]
+            ],
+            "UG 2": []
         },
         "Saturday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 1": [],
             "Time Table": [
                 {
                     "course": "Saturday",
@@ -1573,7 +1629,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "FHVE",
                     "base": "FHVE",
@@ -1609,6 +1665,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "FHVE",
@@ -1644,11 +1701,15 @@
                     "room": "G04",
                     "branch": ""
                 }
-            ]
+            ],
+            "UG 2": []
         }
     },
     "UG2": {
         "Monday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 3": [],
             "Time Table": [
                 {
                     "course": "Monday",
@@ -1665,7 +1726,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "ICS",
                     "base": "ICS",
@@ -1792,6 +1853,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "FDFED1",
@@ -1881,9 +1943,30 @@
                     "room": "104",
                     "branch": "ALL"
                 }
-            ]
+            ],
+            "UG4": [],
+            "05:30 PM - 06:": [
+                {
+                    "course": "DSD",
+                    "base": "DSD",
+                    "section": "",
+                    "room": "105",
+                    "branch": "ALL"
+                },
+                {
+                    "course": "AE",
+                    "base": "AE",
+                    "section": "",
+                    "room": "104",
+                    "branch": "ALL"
+                }
+            ],
+            "30 PM": []
         },
         "Tuesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 3": [],
             "Time Table": [
                 {
                     "course": "Tuesday",
@@ -1900,7 +1983,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "ML1",
                     "base": "ML",
@@ -2048,6 +2131,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "FDFED2",
@@ -2137,9 +2221,23 @@
                     "room": "109",
                     "branch": "ALL"
                 }
-            ]
+            ],
+            "UG4": [],
+            "05:30 PM - 06:": [
+                {
+                    "course": "BDA",
+                    "base": "BDA",
+                    "section": "",
+                    "room": "109",
+                    "branch": "ALL"
+                }
+            ],
+            "30 PM": []
         },
         "Wednesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 3": [],
             "Time Table": [
                 {
                     "course": "Wednesday",
@@ -2156,7 +2254,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "IR",
                     "base": "IR",
@@ -2290,6 +2388,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "ICPS",
@@ -2370,9 +2469,67 @@
                     "room": "108",
                     "branch": "ALL"
                 }
-            ]
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "course": "ML1",
+                    "base": "ML",
+                    "section": "Sec1",
+                    "room": "109",
+                    "branch": ""
+                },
+                {
+                    "course": "ML2",
+                    "base": "ML",
+                    "section": "Sec2",
+                    "room": "110",
+                    "branch": ""
+                },
+                {
+                    "course": "CD",
+                    "base": "CD",
+                    "section": "",
+                    "room": "111",
+                    "branch": "ALL"
+                },
+                {
+                    "course": "FQC",
+                    "base": "FQC",
+                    "section": "",
+                    "room": "112",
+                    "branch": "ALL"
+                },
+                {
+                    "course": "MCD",
+                    "base": "MCD",
+                    "section": "",
+                    "room": "105",
+                    "branch": "ALL"
+                },
+                {
+                    "course": "RI",
+                    "base": "RI",
+                    "section": "",
+                    "room": "108",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [],
+            "05:30 PM - 06:": [
+                {
+                    "course": "RI",
+                    "base": "RI",
+                    "section": "",
+                    "room": "108",
+                    "branch": "ALL"
+                }
+            ],
+            "30 PM": []
         },
         "Thursday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 3": [],
             "Time Table": [
                 {
                     "course": "Thursday",
@@ -2389,7 +2546,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "AEM",
                     "base": "AEM",
@@ -2495,6 +2652,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "IR",
@@ -2591,9 +2749,15 @@
                     "room": "112",
                     "branch": "ALL"
                 }
-            ]
+            ],
+            "UG4": [],
+            "05:30 PM - 06:": [],
+            "30 PM": []
         },
         "Friday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 3": [],
             "Time Table": [
                 {
                     "course": "Friday",
@@ -2610,7 +2774,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "DSP",
                     "base": "DSP",
@@ -2758,6 +2922,7 @@
                     "branch": "ALL"
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "ICPS",
@@ -2826,9 +2991,23 @@
                     "room": "110",
                     "branch": "ALL"
                 }
-            ]
+            ],
+            "UG4": [],
+            "05:30 PM - 06:": [
+                {
+                    "course": "GENAI",
+                    "base": "GENAI",
+                    "section": "",
+                    "room": "110",
+                    "branch": "ALL"
+                }
+            ],
+            "30 PM": []
         },
         "Saturday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "UG 3": [],
             "Time Table": [
                 {
                     "course": "Saturday",
@@ -2845,7 +3024,7 @@
                     "branch": "ALL"
                 }
             ],
-            "08:45 AM - 9:45AM": [
+            "08:45 AM - 9:45 AM": [
                 {
                     "course": "QRA",
                     "base": "QRA",
@@ -2965,6 +3144,7 @@
                     "branch": ""
                 }
             ],
+            "1:00 PM - 02:00 PM": [],
             "02:15 PM - 03:15PM": [
                 {
                     "course": "QRA",
@@ -3010,11 +3190,48 @@
                     "room": "",
                     "branch": "ALL"
                 }
-            ]
+            ],
+            "04:30 PM - 05:30 PM": [
+                {
+                    "course": "QRA",
+                    "base": "QRA",
+                    "section": "",
+                    "room": "3 G09",
+                    "branch": "ALL"
+                },
+                {
+                    "course": "GENAI",
+                    "base": "GENAI",
+                    "section": "",
+                    "room": "105",
+                    "branch": "ALL"
+                },
+                {
+                    "course": "GENAI",
+                    "base": "GENAI",
+                    "section": "",
+                    "room": "",
+                    "branch": "ALL"
+                }
+            ],
+            "UG4": [],
+            "05:30 PM - 06:": [
+                {
+                    "course": "GENAI",
+                    "base": "GENAI",
+                    "section": "",
+                    "room": "",
+                    "branch": "ALL"
+                }
+            ],
+            "30 PM": []
         }
     },
     "UG3": {
         "Monday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "Course details - M2026": [],
             "UG3": [
                 {
                     "course": "PC,AI&DS",
@@ -3026,6 +3243,9 @@
             ]
         },
         "Tuesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "Course details - M2026": [],
             "UG3": [
                 {
                     "course": "OS",
@@ -3036,7 +3256,16 @@
                 }
             ]
         },
+        "Wednesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "Course details - M2026": [],
+            "UG3": []
+        },
         "Thursday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "Course details - M2026": [],
             "UG3": [
                 {
                     "course": "PROGRAM",
@@ -3055,6 +3284,9 @@
             ]
         },
         "Friday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "Course details - M2026": [],
             "UG3": [
                 {
                     "course": "Dr.",
@@ -3066,6 +3298,9 @@
             ]
         },
         "Saturday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "Timetable - Monsoon 2026": [],
+            "Course details - M2026": [],
             "UG3": [
                 {
                     "course": "os@iiits.in",
@@ -3079,6 +3314,8 @@
     },
     "UG4": {
         "Monday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "PE, CSE and Timetable - Monsoon 2026": [],
             "UG4": [
                 {
                     "course": "PE,",
@@ -3097,6 +3334,8 @@
             ]
         },
         "Tuesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "PE, CSE and Timetable - Monsoon 2026": [],
             "UG4": [
                 {
                     "course": "ADL",
@@ -3108,6 +3347,8 @@
             ]
         },
         "Wednesday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "PE, CSE and Timetable - Monsoon 2026": [],
             "UG4": [
                 {
                     "course": "ADVANCED",
@@ -3119,6 +3360,8 @@
             ]
         },
         "Thursday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "PE, CSE and Timetable - Monsoon 2026": [],
             "UG4": [
                 {
                     "course": "PE,",
@@ -3130,6 +3373,8 @@
             ]
         },
         "Friday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "PE, CSE and Timetable - Monsoon 2026": [],
             "UG4": [
                 {
                     "course": "Dr.Shaik",
@@ -3141,6 +3386,8 @@
             ]
         },
         "Saturday": {
+            "(An Institute of National Importance under an Act of Parliament)": [],
+            "PE, CSE and Timetable - Monsoon 2026": [],
             "UG4": [
                 {
                     "course": "adl@iiits.in",

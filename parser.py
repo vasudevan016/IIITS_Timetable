@@ -93,72 +93,73 @@ if os.path.exists(timetable_filepath):
         with pdfplumber.open(timetable_filepath) as pdf:
             for page_num, page in enumerate(pdf.pages):
                 batch = f"UG{page_num + 1}"
-                if batch not in timetable_db:
-                    break 
+                if batch not in timetable_db: break 
+                
+                # Memory cache to fix the PDF's missing lines for 2-hour afternoon classes
+                prev_row_classes = {day: [] for day in days}
                 
                 tables = page.extract_tables()
                 for table in tables:
                     if not table: continue
                     
                     for row in table[1:]:
-                        if len(row) < 7: 
-                            continue # Safely skip malformed rows
+                        if len(row) < 7: continue 
                         
                         time_slot = row[0] 
                         if not time_slot or "BREAK" in time_slot.upper() or "LUNCH" in time_slot.upper():
                             continue
                         
-                        # Clean up weird PDF time formatting (e.g., "10:\n45 AM")
-                        clean_time = time_slot.replace('\n', '').strip()
+                        # Clean dirty PDF time formatting (e.g., fixing "05:\n30 PM")
+                        clean_time = re.sub(r'\s+', ' ', time_slot.replace('\n', ' ')).strip()
+                        clean_time = clean_time.replace(': ', ':')
                         if '-' in clean_time and ' - ' not in clean_time:
                             clean_time = clean_time.replace('-', ' - ')
-                        clean_time = re.sub(r'\s+', ' ', clean_time)
                         
                         for i, day in enumerate(days):
                             if i + 1 < len(row) and row[i+1]:
-                                cell_text = row[i+1]
-                                classes_raw = [c.strip() for c in cell_text.split('\n') if c.strip()]
+                                classes_raw = [c.strip() for c in row[i+1].split('\n') if c.strip()]
+                            else:
+                                classes_raw = []
                                 
-                                if day not in timetable_db[batch]: 
-                                    timetable_db[batch][day] = {}
-                                if clean_time not in timetable_db[batch][day]: 
-                                    timetable_db[batch][day][clean_time] = []
+                            # FIX: If the 5:30 slot is empty, pull down the 2-hour class from 4:30
+                            if "05:30" in clean_time and not classes_raw:
+                                classes_raw = prev_row_classes[day]
+                                
+                            prev_row_classes[day] = classes_raw
+                            
+                            if day not in timetable_db[batch]: 
+                                timetable_db[batch][day] = {}
+                            if clean_time not in timetable_db[batch][day]: 
+                                timetable_db[batch][day][clean_time] = []
+                                
+                            for class_str in classes_raw:
+                                match = re.match(r'^([A-Za-z\-&]+)(\d*)\s+(.*)$', class_str)
+                                if match:
+                                    base = match.group(1).upper()
+                                    sec_num = match.group(2)
+                                    room = match.group(3).strip()
                                     
-                                for class_str in classes_raw:
-                                    # Regex: Captures Base Course (letters/hyphens/&), Section (digits), Room (rest)
-                                    match = re.match(r'^([A-Za-z\-&]+)(\d*)\s+(.*)$', class_str)
+                                    # Strict section locking
+                                    branch = "" if sec_num else "ALL"
+                                    section = f"Sec{sec_num}" if sec_num else ""
+                                        
+                                    timetable_db[batch][day][clean_time].append({
+                                        "course": f"{base}{sec_num}" if sec_num else base,
+                                        "base": base,
+                                        "section": section,
+                                        "room": room,
+                                        "branch": branch
+                                    })
+                                else:
+                                    parts = class_str.split()
+                                    timetable_db[batch][day][clean_time].append({
+                                        "course": parts[0] if parts else class_str,
+                                        "base": parts[0].upper() if parts else class_str,
+                                        "section": "",
+                                        "room": " ".join(parts[1:]) if len(parts) > 1 else "",
+                                        "branch": "ALL" 
+                                    })
                                     
-                                    if match:
-                                        base = match.group(1).upper()
-                                        sec_num = match.group(2)
-                                        room = match.group(3).strip()
-                                        
-                                        # If there's a section number, lock it to that section. If blank, show to ALL.
-                                        if sec_num:
-                                            branch = "" 
-                                            section = f"Sec{sec_num}"
-                                        else:
-                                            branch = "ALL"
-                                            section = ""
-                                            
-                                        timetable_db[batch][day][clean_time].append({
-                                            "course": f"{base}{sec_num}" if sec_num else base,
-                                            "base": base,
-                                            "section": section,
-                                            "room": room,
-                                            "branch": branch
-                                        })
-                                    else:
-                                        # Safe Fallback for unconventional strings
-                                        parts = class_str.split()
-                                        timetable_db[batch][day][clean_time].append({
-                                            "course": parts[0] if parts else class_str,
-                                            "base": parts[0].upper() if parts else class_str,
-                                            "section": "",
-                                            "room": " ".join(parts[1:]) if len(parts) > 1 else "",
-                                            "branch": "ALL" 
-                                        })
-                                        
         with open('timetable.json', 'w') as f:
             json.dump(timetable_db, f, indent=4)
         print("Successfully repaired and generated timetable.json!")

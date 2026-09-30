@@ -214,7 +214,7 @@
             toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3000);
         }
 
-        // UPGRADED TIME PARSER: Neutralizes dirty PDF spaces (e.g., "10: 45 AM")
+        // UPGRADED TIME PARSER: Neutralizes dirty PDF spaces
         function parseTime(timeStr) {
             if (!timeStr) return new Date();
             const match = timeStr.match(/(\d+)\s*:\s*(\d+)\s*(AM|PM)/i);
@@ -386,6 +386,7 @@
                 return;
             }
 
+            // Beautiful Card Grid for Rooms
             vacantRooms.forEach(room => {
                 list.innerHTML += `
                     <div class="bg-gray-900/50 border border-gray-700 text-gray-300 py-3 rounded-xl text-center font-mono font-bold shadow-sm flex flex-col items-center justify-center hover:bg-emerald-900/20 hover:border-emerald-500/50 hover:text-emerald-400 transition-all cursor-default group">
