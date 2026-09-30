@@ -25,12 +25,6 @@
                         'slide-up-banner': 'slideUpBanner 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
                         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
                         'blob': 'blob 10s infinite alternate',
-                    },
-                    keyframes: {
-                        fadeIn: { '0%': { opacity: '0' }, '100%': { opacity: '1' } },
-                        slideUp: { '0%': { opacity: '0', transform: 'translateY(15px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
-                        slideUpBanner: { '0%': { opacity: '0', transform: 'translateY(100px)' }, '100%': { opacity: '1', transform: 'translateY(0)' } },
-                        blob: { '0%': { transform: 'translate(0px, 0px) scale(1)' }, '100%': { transform: 'translate(30px, -50px) scale(1.1)' } }
                     }
                 }
             }
@@ -65,35 +59,36 @@
         <span id="toast-msg" class="text-sm font-bold tracking-wide"></span>
     </div>
 
-    <!-- Vacant Room Modal -->
+    <!-- Enhanced Vacant Room Modal -->
     <div id="room-modal" class="hide fixed inset-0 z-[300] bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-fade-in">
-        <div class="glass-panel w-full max-w-lg rounded-3xl p-6 md:p-8 shadow-2xl border border-gray-700/50 relative">
-            <button id="close-room-modal" class="absolute top-5 right-5 text-gray-500 hover:text-white transition-colors"><i class="fa-solid fa-xmark text-xl"></i></button>
-            <h2 class="text-2xl font-extrabold mb-1 tracking-tight text-white"><i class="fa-solid fa-door-open mr-2 text-brand-400"></i>Vacant Rooms</h2>
-            <p class="text-xs text-gray-400 mb-6">Find empty classrooms for club meetings or self-study.</p>
+        <div class="glass-panel w-full max-w-2xl rounded-3xl p-6 md:p-8 shadow-2xl border border-gray-700/50 relative">
+            <button id="close-room-modal" class="absolute top-5 right-5 text-gray-500 hover:text-white transition-colors h-8 w-8 flex items-center justify-center"><i class="fa-solid fa-xmark text-xl"></i></button>
+            <h2 class="text-2xl md:text-3xl font-extrabold mb-1 tracking-tight text-white"><i class="fa-solid fa-door-open mr-2 text-brand-400"></i>Vacant Rooms</h2>
+            <p class="text-xs md:text-sm text-gray-400 mb-6">Find empty classrooms for club meetings or self-study.</p>
             
             <div class="grid grid-cols-2 gap-4 mb-6">
                 <div class="space-y-1.5">
                     <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider pl-1">Select Day</label>
-                    <select id="room-day-select" class="w-full bg-gray-900/80 border border-gray-700/50 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition-colors cursor-pointer appearance-none">
+                    <select id="room-day-select" class="w-full bg-gray-900/80 border border-gray-700/50 rounded-xl px-4 py-3 text-sm font-bold text-white outline-none focus:border-brand-500 transition-colors cursor-pointer appearance-none shadow-inner">
                         <option value="Monday">Monday</option><option value="Tuesday">Tuesday</option><option value="Wednesday">Wednesday</option><option value="Thursday">Thursday</option><option value="Friday">Friday</option><option value="Saturday">Saturday</option>
                     </select>
                 </div>
                 <div class="space-y-1.5">
                     <label class="text-[10px] font-bold text-gray-400 uppercase tracking-wider pl-1">Time Slot</label>
-                    <select id="room-time-select" class="w-full bg-gray-900/80 border border-gray-700/50 rounded-xl px-4 py-3 text-sm text-white outline-none focus:border-brand-500 transition-colors cursor-pointer appearance-none">
-                        <!-- Populated by JS -->
+                    <select id="room-time-select" class="w-full bg-gray-900/80 border border-gray-700/50 rounded-xl px-4 py-3 text-sm font-bold text-white outline-none focus:border-brand-500 transition-colors cursor-pointer appearance-none shadow-inner">
+                        <!-- Populated dynamically -->
                     </select>
                 </div>
             </div>
             
-            <div class="bg-gray-950/50 rounded-2xl p-4 border border-white/5 min-h-[150px]">
-                <div class="flex items-center justify-between mb-3 border-b border-gray-800 pb-2">
-                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Available Rooms</span>
-                    <span id="room-count" class="bg-brand-500/20 text-brand-400 text-[10px] font-bold px-2 py-0.5 rounded border border-brand-500/20">0</span>
+            <div class="bg-gray-950/80 rounded-2xl p-5 border border-white/5 min-h-[200px] flex flex-col shadow-inner">
+                <div class="flex items-center justify-between mb-4 border-b border-gray-800 pb-3">
+                    <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Available Campuses</span>
+                    <span id="room-count" class="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-3 py-1 rounded-md border border-emerald-500/20 shadow-[0_0_15px_rgba(16,185,129,0.15)]">0</span>
                 </div>
-                <div id="vacant-room-list" class="flex flex-wrap gap-2">
-                    <div class="w-full text-center py-6 text-gray-500 text-sm font-medium"><i class="fa-solid fa-circle-notch fa-spin mr-2"></i>Select a time slot</div>
+                <!-- Upgraded Grid UI -->
+                <div id="vacant-room-list" class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-3">
+                    <div class="w-full col-span-full text-center py-8 text-gray-500 text-sm font-medium"><i class="fa-solid fa-circle-notch fa-spin mr-2"></i>Select a time slot</div>
                 </div>
             </div>
         </div>
@@ -147,9 +142,9 @@
                     <i class="fa-solid fa-share-nodes text-white text-lg group-hover:scale-110 transition-transform"></i>
                     <span class="absolute -bottom-10 left-1/2 -translate-x-1/2 bg-gray-800 text-xs py-1 px-2 rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">Share Day</span>
                 </div>
-                <!-- New Room Finder Button -->
-                <button id="open-room-finder" class="w-10 h-10 rounded-xl bg-gray-800/80 hover:bg-white/10 flex items-center justify-center border border-gray-700/50 transition-all group">
-                    <i class="fa-solid fa-door-open text-gray-400 group-hover:text-brand-400 transition-colors"></i>
+                <!-- Room Finder Button -->
+                <button id="open-room-finder" class="w-10 h-10 rounded-xl bg-gray-800/80 hover:bg-emerald-500/20 flex items-center justify-center border border-gray-700/50 hover:border-emerald-500/50 transition-all group">
+                    <i class="fa-solid fa-door-open text-gray-400 group-hover:text-emerald-400 transition-colors"></i>
                 </button>
                 <div class="ml-2">
                     <h1 class="text-xl font-bold tracking-tight hidden sm:block leading-none mb-1">IIITS Schedule</h1>
@@ -193,7 +188,6 @@
             <div class="flex overflow-x-auto gap-2 md:gap-3 mb-5 pb-2 hide-scrollbar w-full border-b border-gray-800/50" id="day-tabs"></div>
 
             <div id="focus-container" class="space-y-2.5 md:space-y-4 max-w-4xl mx-auto w-full flex-grow"></div>
-            
             <div id="grid-container" class="hide grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-2 flex-grow w-full h-full"></div>
             
             <div class="mt-8 mb-2 text-center text-[11px] text-gray-600 font-bold tracking-[0.2em] opacity-60 uppercase">Created by Vasudevan M</div>
@@ -205,7 +199,6 @@
         let notifiedClasses = new Set(), trackerInterval = null, clockInterval = null;
         let viewMode = 'focus'; 
         const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-        
         const CAMPUS_ROOMS = ["G04", "G05", "G06", "G07", "G08", "G09", "B03", "B04", "B05", "103", "104", "105", "108", "109", "110", "111", "112", "114/102"];
         
         let deferredPrompt;
@@ -221,6 +214,22 @@
             toast.classList.add('show'); setTimeout(() => toast.classList.remove('show'), 3000);
         }
 
+        // UPGRADED TIME PARSER: Neutralizes dirty PDF spaces (e.g., "10: 45 AM")
+        function parseTime(timeStr) {
+            if (!timeStr) return new Date();
+            const match = timeStr.match(/(\d+)\s*:\s*(\d+)\s*(AM|PM)/i);
+            if (!match) return new Date();
+            let hours = parseInt(match[1]); let mins = parseInt(match[2]);
+            if (match[3].toUpperCase() === 'PM' && hours < 12) hours += 12;
+            if (match[3].toUpperCase() === 'AM' && hours === 12) hours = 0;
+            const d = new Date(); d.setHours(hours, mins, 0, 0);
+            return d;
+        }
+
+        function cleanTimeDisplay(rawTime) {
+            return rawTime.replace(/\s*:\s*/g, ':').replace(/(AM|PM)/gi, ' $1').replace(/\s+/g, ' ').trim();
+        }
+
         async function initApp() {
             try {
                 const [studentRes, timetableRes] = await Promise.all([ fetch('students.json'), fetch('timetable.json') ]);
@@ -233,9 +242,7 @@
                 if (savedRoll) {
                     const student = Object.values(studentData).find(s => s.Roll && s.Roll.toUpperCase() === savedRoll);
                     if (student) {
-                        currentUser = student; 
-                        currentUser.CleanName = sanitizeName(currentUser.Name);
-                        currentUser.Sections = currentUser.Sections || {}; // Safeguard
+                        currentUser = student; currentUser.CleanName = sanitizeName(currentUser.Name);
                         loadDashboard(); return; 
                     }
                 }
@@ -262,9 +269,7 @@
             }
             
             if (student) {
-                currentUser = student; 
-                currentUser.CleanName = sanitizeName(currentUser.Name); 
-                currentUser.Sections = currentUser.Sections || {}; // Safeguard
+                currentUser = student; currentUser.CleanName = sanitizeName(currentUser.Name); 
                 if (!rawInput.startsWith('?')) localStorage.setItem('iiits_saved_roll', currentUser.Roll);
                 errorMsg.classList.add('hide'); loadDashboard();
             } else {
@@ -298,18 +303,51 @@
         document.getElementById('view-focus-btn').onclick = () => setViewMode('focus'); document.getElementById('view-grid-btn').onclick = () => setViewMode('grid');
         document.getElementById('mobile-view-focus').onclick = () => setViewMode('focus'); document.getElementById('mobile-view-grid').onclick = () => setViewMode('grid');
 
-        // --- ROOM FINDER LOGIC ---
+        // --- UPGRADED ROOM FINDER LOGIC ---
         document.getElementById('open-room-finder').addEventListener('click', () => {
             const modal = document.getElementById('room-modal');
             const timeSelect = document.getElementById('room-time-select');
-            const allTimes = new Set();
-            ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].forEach(day => {
+            const daySelect = document.getElementById('room-day-select');
+            
+            const allTimesMap = new Map(); 
+            ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"].forEach(day => {
                 const dayData = timetableData["UG1"]?.[day];
-                if (dayData) Object.keys(dayData).forEach(t => allTimes.add(t));
+                if (dayData) Object.keys(dayData).forEach(t => allTimesMap.set(t, cleanTimeDisplay(t)));
             });
+            
+            // Sort chronologically using actual Date objects
+            const sortedOriginalKeys = Array.from(allTimesMap.keys()).sort((a, b) => {
+                return parseTime(a.split(/-/)[0]) - parseTime(b.split(/-/)[0]);
+            });
+
             timeSelect.innerHTML = '';
-            Array.from(allTimes).sort().forEach(time => { timeSelect.innerHTML += `<option value="${time}">${time}</option>`; });
-            document.getElementById('room-day-select').value = activeDay === 'Sunday' ? 'Monday' : activeDay;
+            sortedOriginalKeys.forEach(t => {
+                timeSelect.innerHTML += `<option value="${t}">${allTimesMap.get(t)}</option>`;
+            });
+
+            // Auto-Select Current Day
+            let currentDay = daysOfWeek[new Date().getDay()];
+            if (currentDay === 'Sunday') currentDay = 'Monday';
+            daySelect.value = currentDay;
+
+            // Auto-Select Ongoing / Upcoming Time
+            const now = new Date();
+            let bestTimeKey = sortedOriginalKeys[0];
+            
+            for(let i=0; i < sortedOriginalKeys.length; i++) {
+                const t = sortedOriginalKeys[i];
+                const parts = t.split(/-/);
+                const startTime = parseTime(parts[0]);
+                const endTime = parseTime(parts[1] || parts[0]);
+                
+                if (now >= startTime && now <= endTime) {
+                    bestTimeKey = t; break;
+                } else if (startTime > now) {
+                    bestTimeKey = t; break;
+                }
+            }
+            timeSelect.value = bestTimeKey;
+
             modal.classList.remove('hide');
             searchVacantRooms();
         });
@@ -323,6 +361,7 @@
             const time = document.getElementById('room-time-select').value;
             const list = document.getElementById('vacant-room-list');
             const count = document.getElementById('room-count');
+            
             if (!time) return;
 
             let occupiedRooms = new Set();
@@ -331,7 +370,7 @@
                 if (slots) {
                     slots.forEach(s => {
                         if (s.room) {
-                            let cleanRoom = String(s.room).toUpperCase().replace(/LAB\s*/i, '').trim();
+                            let cleanRoom = s.room.toUpperCase().replace(/LAB\s*/i, '').trim();
                             occupiedRooms.add(cleanRoom);
                         }
                     });
@@ -343,11 +382,20 @@
             list.innerHTML = '';
             
             if (vacantRooms.length === 0) {
-                list.innerHTML = `<div class="w-full text-center py-6 text-red-400 text-sm font-medium">Campus is completely full during this slot!</div>`;
+                list.innerHTML = `<div class="w-full col-span-full text-center py-8 text-red-400 text-sm font-medium">Campus is completely full during this slot!</div>`;
                 return;
             }
-            vacantRooms.forEach(room => { list.innerHTML += `<div class="bg-gray-800/80 border border-gray-600/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm font-mono shadow-sm"><i class="fa-solid fa-door-open mr-2 text-emerald-400"></i>${room}</div>`; });
+
+            vacantRooms.forEach(room => {
+                list.innerHTML += `
+                    <div class="bg-gray-900/50 border border-gray-700 text-gray-300 py-3 rounded-xl text-center font-mono font-bold shadow-sm flex flex-col items-center justify-center hover:bg-emerald-900/20 hover:border-emerald-500/50 hover:text-emerald-400 transition-all cursor-default group">
+                        <i class="fa-solid fa-door-open mb-1.5 opacity-60 text-lg group-hover:scale-110 transition-transform"></i>
+                        <span class="text-xs tracking-widest">${room}</span>
+                    </div>
+                `;
+            });
         }
+        // -------------------------
 
         function getMyClassForSlot(slots) {
             return slots.find(slot => {
@@ -355,8 +403,8 @@
                 if (slot.branch && slot.branch !== "ALL" && slot.branch !== currentUser.Branch) return false;
                 for (const [courseGrp, mySec] of Object.entries(currentUser.Sections)) {
                     if (slot.course === courseGrp || (slot.base && courseGrp.includes(slot.base))) {
-                        const jsonSec = slot.section ? String(slot.section).replace(/\s+/g, '').replace(/Lab/i, '').toLowerCase() : "";
-                        const targetSec = mySec ? String(mySec).toLowerCase() : "";
+                        const jsonSec = slot.section ? slot.section.replace(/\s+/g, '').replace(/Lab/i, '').toLowerCase() : "";
+                        const targetSec = mySec ? mySec.toLowerCase() : "";
                         return jsonSec === targetSec;
                     }
                 }
@@ -367,11 +415,14 @@
         document.getElementById('share-btn').addEventListener('click', () => {
             const dayData = timetableData["UG1"]?.[activeDay];
             if(!dayData) return showToast("No classes to share!");
+            
+            const sortedTimes = Object.keys(dayData).sort((a, b) => parseTime(a.split(/-/)[0]) - parseTime(b.split(/-/)[0]));
             let shareText = `📚 ${currentUser.CleanName.split(' ')[0]}'s Schedule (${activeDay})\n`;
             let hasClasses = false;
-            Object.keys(dayData).forEach(timeStr => {
+            
+            sortedTimes.forEach(timeStr => {
                 const myClass = getMyClassForSlot(dayData[timeStr]);
-                if (myClass) { hasClasses = true; shareText += `\n🕒 ${timeStr}\n📖 ${myClass.course} ${myClass.section || ''} | 📍 ${myClass.room || 'TBA'}`; }
+                if (myClass) { hasClasses = true; shareText += `\n🕒 ${cleanTimeDisplay(timeStr)}\n📖 ${myClass.course} ${myClass.section || ''} | 📍 ${myClass.room}`; }
             });
             if(!hasClasses) shareText += "\nFree day! 🎉";
             navigator.clipboard.writeText(shareText).then(() => showToast("Schedule Copied!"));
@@ -391,22 +442,6 @@
             trackerInterval = setInterval(() => { checkUpcomingClasses(); renderSchedule(); }, 60000);
         }
 
-        // Bulletproof Time Parser
-        function parseTime(timeStr) {
-            if (!timeStr) return new Date(); // Safeguard
-            const str = String(timeStr).trim();
-            const match = str.match(/(\d+):(\d+)\s*(AM|PM)/i);
-            if (!match) return new Date(); // Safeguard
-            
-            let hours = parseInt(match[1], 10);
-            if (match[3].toUpperCase() === 'PM' && hours < 12) hours += 12;
-            if (match[3].toUpperCase() === 'AM' && hours === 12) hours = 0;
-            
-            const d = new Date(); 
-            d.setHours(hours, parseInt(match[2], 10), 0, 0);
-            return d;
-        }
-
         function formatDuration(mins) {
             if (mins < 60) return `${mins} mins`;
             const h = Math.floor(mins / 60); const m = mins % 60;
@@ -420,15 +455,13 @@
             if (!dayData) return;
 
             Object.keys(dayData).forEach(timeStr => {
-                const timeParts = String(timeStr).split(/\s*[-–—]\s*/);
-                const startStr = timeParts[0] || timeStr;
-                const startTime = parseTime(startStr);
+                const startTime = parseTime(timeStr.split(/-/)[0]);
                 const diffMinutes = (startTime - new Date()) / 60000;
                 
                 if (diffMinutes > 0 && diffMinutes <= 10) {
                     const myClass = getMyClassForSlot(dayData[timeStr]);
                     if (myClass && !notifiedClasses.has(timeStr)) {
-                        new Notification("Upcoming Class", { body: `${myClass.course} starts in 10 minutes at ${myClass.room || 'TBA'}.`, icon: "icon.png" });
+                        new Notification("Upcoming Class", { body: `${myClass.course} starts in 10 minutes at ${myClass.room}.`, icon: "icon.png" });
                         notifiedClasses.add(timeStr);
                     }
                 }
@@ -484,17 +517,17 @@
             const isToday = activeDay === daysOfWeek[now.getDay()];
             let classCount = 0; let lastClassEndTime = null; let nextClassFound = false;
 
-            Object.keys(dayData).forEach((timeStr, index) => {
+            // Sort chronologically to prevent random break bugs
+            const sortedTimes = Object.keys(dayData).sort((a, b) => parseTime(a.split(/-/)[0]) - parseTime(b.split(/-/)[0]));
+
+            sortedTimes.forEach((timeStr, index) => {
                 const myClass = getMyClassForSlot(dayData[timeStr]);
                 if (!myClass) return;
 
-                // Bulletproof String Splitter (Handles any weird formatting)
-                const timeParts = String(timeStr).split(/\s*[-–—]\s*/);
-                const startStr = timeParts[0] || timeStr;
-                const endStr = timeParts.length > 1 ? timeParts[1] : startStr;
-
-                const startTime = parseTime(startStr);
-                const endTime = parseTime(endStr);
+                const parts = timeStr.split(/-/);
+                const startTime = parseTime(parts[0]), endTime = parseTime(parts[1] || parts[0]);
+                const startStr = cleanTimeDisplay(parts[0]);
+                const endStr = cleanTimeDisplay(parts[1] || parts[0]);
 
                 if (lastClassEndTime && startTime > lastClassEndTime) {
                     const breakMins = (startTime - lastClassEndTime) / 60000;
@@ -532,7 +565,7 @@
                             <div class="flex-grow">
                                 <div class="w-full rounded-lg border ${style} px-3 py-2 relative backdrop-blur-sm flex justify-between items-center gap-2">
                                     <span class="font-extrabold text-xs md:text-sm tracking-wide leading-tight">${myClass.course} ${myClass.section || ''}</span>
-                                    <div class="flex items-center bg-gray-950/50 border border-white/5 px-2 py-1 rounded text-[9px] md:text-xs font-mono font-semibold text-gray-300 shadow-inner whitespace-nowrap"><i class="fa-solid fa-door-open mr-1.5 text-brand-400/80"></i>${myClass.room || 'TBA'}</div>
+                                    <div class="flex items-center bg-gray-950/50 border border-white/5 px-2 py-1 rounded text-[9px] md:text-xs font-mono font-semibold text-gray-300 shadow-inner whitespace-nowrap"><i class="fa-solid fa-door-open mr-1.5 text-brand-400/80"></i>${myClass.room}</div>
                                 </div>
                             </div>
                         </div>
@@ -569,18 +602,16 @@
                 }
 
                 let classCount = 0; let nextClassFound = false;
+                const sortedTimes = Object.keys(dayData).sort((a, b) => parseTime(a.split(/-/)[0]) - parseTime(b.split(/-/)[0]));
 
-                Object.keys(dayData).forEach(timeStr => {
+                sortedTimes.forEach(timeStr => {
                     const myClass = getMyClassForSlot(dayData[timeStr]);
                     if (myClass) {
                         classCount++; totalClasses++;
-                        
-                        const timeParts = String(timeStr).split(/\s*[-–—]\s*/);
-                        const startStr = timeParts[0] || timeStr;
-                        const endStr = timeParts.length > 1 ? timeParts[1] : startStr;
-
-                        const startTime = parseTime(startStr);
-                        const endTime = parseTime(endStr);
+                        const parts = timeStr.split(/-/);
+                        const startTime = parseTime(parts[0]), endTime = parseTime(parts[1] || parts[0]);
+                        const startStr = cleanTimeDisplay(parts[0]);
+                        const endStr = cleanTimeDisplay(parts[1] || parts[0]);
                         
                         let style = colors[myClass.base] || "bg-gray-800/50 border-gray-600/50 text-gray-300";
                         let statusBadge = '', cardOutline = 'border-transparent', progressHTML = '';
@@ -601,9 +632,9 @@
                                 ${statusBadge}
                                 <div class="flex justify-between items-start mb-1 gap-1">
                                     <span class="font-extrabold text-[11px] tracking-wide leading-tight">${myClass.course} ${myClass.section || ''}</span>
-                                    <span class="text-[8px] font-mono bg-black/50 border border-white/10 px-1 py-0.5 rounded text-gray-300 flex-shrink-0">${myClass.room || 'TBA'}</span>
+                                    <span class="text-[8px] font-mono bg-black/50 border border-white/10 px-1 py-0.5 rounded text-gray-300 flex-shrink-0">${myClass.room}</span>
                                 </div>
-                                <div class="text-[9px] font-medium opacity-75 flex items-center"><i class="fa-regular fa-clock mr-1 text-[8px] text-brand-400"></i> ${startStr.replace(/ AM| PM/gi, '')} - ${endStr.replace(/ AM| PM/gi, '')}</div>
+                                <div class="text-[9px] font-medium opacity-75 flex items-center"><i class="fa-regular fa-clock mr-1 text-[8px] text-brand-400"></i> ${startStr.replace(/ AM| PM/g, '')} - ${endStr.replace(/ AM| PM/g, '')}</div>
                                 ${progressHTML}
                             </div>
                         `;
