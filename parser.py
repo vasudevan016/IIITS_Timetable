@@ -76,9 +76,12 @@ for course, files in pdf_files.items():
 with open('students.json', 'w') as f:
     json.dump(student_db, f, indent=4)
 # ==========================================
-# PART 2: TIMETABLE GRID PARSER
+# PART 2: TIMETABLE GRID PARSER (FIXED)
 # ==========================================
 import pdfplumber
+import json
+import os
+import re
 
 timetable_filepath = os.path.join("data", "Time table M2026.pdf")
 timetable_db = {"UG1": {}, "UG2": {}, "UG3": {}, "UG4": {}}
@@ -88,43 +91,77 @@ print("Scanning for Timetable PDF...")
 if os.path.exists(timetable_filepath):
     try:
         with pdfplumber.open(timetable_filepath) as pdf:
-            # The schedule spans multiple pages, so we iterate through them
-            for page in pdf.pages:
-                tables = page.extract_tables()
+            # UG1 is page 1, UG2 is page 2, etc.
+            for page_num, page in enumerate(pdf.pages):
+                batch = f"UG{page_num + 1}"
+                if batch not in timetable_db:
+                    break # Stop if we go past UG4
                 
+                tables = page.extract_tables()
                 for table in tables:
                     if not table: continue
                     
-                    # Assuming table[0] contains the Days header
-                    # table[1:] contains Time in column 0, and Classes in columns 1-6
                     for row in table[1:]:
                         time_slot = row[0] 
-                        if not time_slot or "BREAK" in time_slot.upper():
+                        if not time_slot or "BREAK" in time_slot.upper() or "LUNCH" in time_slot.upper():
                             continue
                         
+                        # Fix ugly PDF time formatting
                         clean_time = time_slot.replace('\n', '').strip()
+                        if '-' in clean_time and ' - ' not in clean_time:
+                            clean_time = clean_time.replace('-', ' - ')
                         
                         for i, day in enumerate(days):
-                            # Col 0 is time, Col 1 is Monday, Col 2 is Tuesday, etc.
                             if i + 1 < len(row) and row[i+1]:
-                                classes_raw = row[i+1].replace('\n', ' ').strip()
+                                # Split multiple classes packed into a single grid cell
+                                classes_raw = row[i+1].split('\n')
                                 
-                                if day not in timetable_db["UG1"]: 
-                                    timetable_db["UG1"][day] = {}
-                                if clean_time not in timetable_db["UG1"][day]: 
-                                    timetable_db["UG1"][day][clean_time] = []
+                                if day not in timetable_db[batch]: 
+                                    timetable_db[batch][day] = {}
+                                if clean_time not in timetable_db[batch][day]: 
+                                    timetable_db[batch][day][clean_time] = []
                                     
-                                # You can add custom regex here later to split "OCW4 G08" 
-                                # into separate "course", "section", and "room" variables.
-                                timetable_db["UG1"][day][clean_time].append({
-                                    "raw_text": classes_raw,
-                                    "branch": "ALL" # Placeholder until regex is added
-                                })
-                                
-        # Export the compiled timetable database
+                                for class_str in classes_raw:
+                                    class_str = class_str.strip()
+                                    if not class_str: continue
+                                    
+                                    # Regex to accurately slice "OCW4 G08" or "DLD1 Lab 114/102"
+                                    match = re.match(r'^([A-Za-z]+)(\d*)\s+(.*)$', class_str)
+                                    if match:
+                                        base = match.group(1).upper()
+                                        sec_num = match.group(2)
+                                        room = match.group(3).strip()
+                                        
+                                        # Universal batch classes don't need section filtering
+                                        if base in ["FHVE", "EE", "EDL", "PGP", "QRA"]:
+                                            branch = "ALL"
+                                            section = ""
+                                        else:
+                                            branch = "ALL" # Default to all branches unless strictly specified
+                                            section = f"Sec{sec_num}" if sec_num else ""
+                                            
+                                        timetable_db[batch][day][clean_time].append({
+                                            "course": f"{base}{sec_num}" if sec_num else base,
+                                            "base": base,
+                                            "section": section,
+                                            "room": room,
+                                            "branch": branch
+                                        })
+                                    else:
+                                        # Fallback for weird text formats (e.g. "DSP G06")
+                                        parts = class_str.split()
+                                        timetable_db[batch][day][clean_time].append({
+                                            "course": parts[0] if parts else class_str,
+                                            "base": parts[0].upper() if parts else class_str,
+                                            "section": "",
+                                            "room": " ".join(parts[1:]) if len(parts) > 1 else "",
+                                            "branch": "ALL"
+                                        })
+                                        
+        # Export the beautifully formatted JSON
         with open('timetable.json', 'w') as f:
             json.dump(timetable_db, f, indent=4)
-        print("Successfully generated timetable.json!")
+        print("Successfully repaired and generated timetable.json!")
         
     except Exception as e:
         print(f"Error extracting tables: {e}")
