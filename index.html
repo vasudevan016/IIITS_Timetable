@@ -206,7 +206,6 @@
         let viewMode = 'focus'; 
         const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         
-        // Master Room List extracted from M2026 PDF
         const CAMPUS_ROOMS = ["G04", "G05", "G06", "G07", "G08", "G09", "B03", "B04", "B05", "103", "104", "105", "108", "109", "110", "111", "112", "114/102"];
         
         let deferredPrompt;
@@ -234,7 +233,9 @@
                 if (savedRoll) {
                     const student = Object.values(studentData).find(s => s.Roll && s.Roll.toUpperCase() === savedRoll);
                     if (student) {
-                        currentUser = student; currentUser.CleanName = sanitizeName(currentUser.Name);
+                        currentUser = student; 
+                        currentUser.CleanName = sanitizeName(currentUser.Name);
+                        currentUser.Sections = currentUser.Sections || {}; // Safeguard
                         loadDashboard(); return; 
                     }
                 }
@@ -261,7 +262,9 @@
             }
             
             if (student) {
-                currentUser = student; currentUser.CleanName = sanitizeName(currentUser.Name); 
+                currentUser = student; 
+                currentUser.CleanName = sanitizeName(currentUser.Name); 
+                currentUser.Sections = currentUser.Sections || {}; // Safeguard
                 if (!rawInput.startsWith('?')) localStorage.setItem('iiits_saved_roll', currentUser.Roll);
                 errorMsg.classList.add('hide'); loadDashboard();
             } else {
@@ -299,18 +302,13 @@
         document.getElementById('open-room-finder').addEventListener('click', () => {
             const modal = document.getElementById('room-modal');
             const timeSelect = document.getElementById('room-time-select');
-            
             const allTimes = new Set();
             ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].forEach(day => {
                 const dayData = timetableData["UG1"]?.[day];
                 if (dayData) Object.keys(dayData).forEach(t => allTimes.add(t));
             });
-            
             timeSelect.innerHTML = '';
-            Array.from(allTimes).sort().forEach(time => {
-                timeSelect.innerHTML += `<option value="${time}">${time}</option>`;
-            });
-
+            Array.from(allTimes).sort().forEach(time => { timeSelect.innerHTML += `<option value="${time}">${time}</option>`; });
             document.getElementById('room-day-select').value = activeDay === 'Sunday' ? 'Monday' : activeDay;
             modal.classList.remove('hide');
             searchVacantRooms();
@@ -325,17 +323,15 @@
             const time = document.getElementById('room-time-select').value;
             const list = document.getElementById('vacant-room-list');
             const count = document.getElementById('room-count');
-            
             if (!time) return;
 
             let occupiedRooms = new Set();
-            
             Object.keys(timetableData).forEach(batch => {
                 const slots = timetableData[batch]?.[day]?.[time];
                 if (slots) {
                     slots.forEach(s => {
                         if (s.room) {
-                            let cleanRoom = s.room.toUpperCase().replace(/LAB\s*/i, '').trim();
+                            let cleanRoom = String(s.room).toUpperCase().replace(/LAB\s*/i, '').trim();
                             occupiedRooms.add(cleanRoom);
                         }
                     });
@@ -343,7 +339,6 @@
             });
 
             const vacantRooms = CAMPUS_ROOMS.filter(r => !occupiedRooms.has(r));
-            
             count.innerText = vacantRooms.length;
             list.innerHTML = '';
             
@@ -351,12 +346,8 @@
                 list.innerHTML = `<div class="w-full text-center py-6 text-red-400 text-sm font-medium">Campus is completely full during this slot!</div>`;
                 return;
             }
-
-            vacantRooms.forEach(room => {
-                list.innerHTML += `<div class="bg-gray-800/80 border border-gray-600/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm font-mono shadow-sm"><i class="fa-solid fa-door-open mr-2 text-emerald-400"></i>${room}</div>`;
-            });
+            vacantRooms.forEach(room => { list.innerHTML += `<div class="bg-gray-800/80 border border-gray-600/50 text-gray-300 px-3 py-1.5 rounded-lg text-sm font-mono shadow-sm"><i class="fa-solid fa-door-open mr-2 text-emerald-400"></i>${room}</div>`; });
         }
-        // -------------------------
 
         function getMyClassForSlot(slots) {
             return slots.find(slot => {
@@ -364,8 +355,8 @@
                 if (slot.branch && slot.branch !== "ALL" && slot.branch !== currentUser.Branch) return false;
                 for (const [courseGrp, mySec] of Object.entries(currentUser.Sections)) {
                     if (slot.course === courseGrp || (slot.base && courseGrp.includes(slot.base))) {
-                        const jsonSec = slot.section ? slot.section.replace(/\s+/g, '').replace(/Lab/i, '').toLowerCase() : "";
-                        const targetSec = mySec ? mySec.toLowerCase() : "";
+                        const jsonSec = slot.section ? String(slot.section).replace(/\s+/g, '').replace(/Lab/i, '').toLowerCase() : "";
+                        const targetSec = mySec ? String(mySec).toLowerCase() : "";
                         return jsonSec === targetSec;
                     }
                 }
@@ -380,7 +371,7 @@
             let hasClasses = false;
             Object.keys(dayData).forEach(timeStr => {
                 const myClass = getMyClassForSlot(dayData[timeStr]);
-                if (myClass) { hasClasses = true; shareText += `\n🕒 ${timeStr}\n📖 ${myClass.course} ${myClass.section || ''} | 📍 ${myClass.room}`; }
+                if (myClass) { hasClasses = true; shareText += `\n🕒 ${timeStr}\n📖 ${myClass.course} ${myClass.section || ''} | 📍 ${myClass.room || 'TBA'}`; }
             });
             if(!hasClasses) shareText += "\nFree day! 🎉";
             navigator.clipboard.writeText(shareText).then(() => showToast("Schedule Copied!"));
@@ -396,18 +387,23 @@
             clockInterval = setInterval(() => { document.getElementById('live-clock').innerText = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }); }, 1000);
 
             setViewMode(viewMode); 
-            
             clearInterval(trackerInterval);
             trackerInterval = setInterval(() => { checkUpcomingClasses(); renderSchedule(); }, 60000);
         }
 
+        // Bulletproof Time Parser
         function parseTime(timeStr) {
-            const match = timeStr.match(/(\d+):(\d+)\s*(AM|PM)/i);
-            if (!match) return new Date();
-            let hours = parseInt(match[1]);
+            if (!timeStr) return new Date(); // Safeguard
+            const str = String(timeStr).trim();
+            const match = str.match(/(\d+):(\d+)\s*(AM|PM)/i);
+            if (!match) return new Date(); // Safeguard
+            
+            let hours = parseInt(match[1], 10);
             if (match[3].toUpperCase() === 'PM' && hours < 12) hours += 12;
             if (match[3].toUpperCase() === 'AM' && hours === 12) hours = 0;
-            const d = new Date(); d.setHours(hours, parseInt(match[2]), 0, 0);
+            
+            const d = new Date(); 
+            d.setHours(hours, parseInt(match[2], 10), 0, 0);
             return d;
         }
 
@@ -424,13 +420,15 @@
             if (!dayData) return;
 
             Object.keys(dayData).forEach(timeStr => {
-                const startTime = parseTime(timeStr.split(' - ')[0]);
+                const timeParts = String(timeStr).split(/\s*[-–—]\s*/);
+                const startStr = timeParts[0] || timeStr;
+                const startTime = parseTime(startStr);
                 const diffMinutes = (startTime - new Date()) / 60000;
                 
                 if (diffMinutes > 0 && diffMinutes <= 10) {
                     const myClass = getMyClassForSlot(dayData[timeStr]);
                     if (myClass && !notifiedClasses.has(timeStr)) {
-                        new Notification("Upcoming Class", { body: `${myClass.course} starts in 10 minutes at ${myClass.room}.`, icon: "icon.png" });
+                        new Notification("Upcoming Class", { body: `${myClass.course} starts in 10 minutes at ${myClass.room || 'TBA'}.`, icon: "icon.png" });
                         notifiedClasses.add(timeStr);
                     }
                 }
@@ -490,8 +488,13 @@
                 const myClass = getMyClassForSlot(dayData[timeStr]);
                 if (!myClass) return;
 
-                const [startStr, endStr] = timeStr.split(' - ');
-                const startTime = parseTime(startStr), endTime = parseTime(endStr);
+                // Bulletproof String Splitter (Handles any weird formatting)
+                const timeParts = String(timeStr).split(/\s*[-–—]\s*/);
+                const startStr = timeParts[0] || timeStr;
+                const endStr = timeParts.length > 1 ? timeParts[1] : startStr;
+
+                const startTime = parseTime(startStr);
+                const endTime = parseTime(endStr);
 
                 if (lastClassEndTime && startTime > lastClassEndTime) {
                     const breakMins = (startTime - lastClassEndTime) / 60000;
@@ -529,7 +532,7 @@
                             <div class="flex-grow">
                                 <div class="w-full rounded-lg border ${style} px-3 py-2 relative backdrop-blur-sm flex justify-between items-center gap-2">
                                     <span class="font-extrabold text-xs md:text-sm tracking-wide leading-tight">${myClass.course} ${myClass.section || ''}</span>
-                                    <div class="flex items-center bg-gray-950/50 border border-white/5 px-2 py-1 rounded text-[9px] md:text-xs font-mono font-semibold text-gray-300 shadow-inner whitespace-nowrap"><i class="fa-solid fa-door-open mr-1.5 text-brand-400/80"></i>${myClass.room}</div>
+                                    <div class="flex items-center bg-gray-950/50 border border-white/5 px-2 py-1 rounded text-[9px] md:text-xs font-mono font-semibold text-gray-300 shadow-inner whitespace-nowrap"><i class="fa-solid fa-door-open mr-1.5 text-brand-400/80"></i>${myClass.room || 'TBA'}</div>
                                 </div>
                             </div>
                         </div>
@@ -571,8 +574,14 @@
                     const myClass = getMyClassForSlot(dayData[timeStr]);
                     if (myClass) {
                         classCount++; totalClasses++;
-                        const [startStr, endStr] = timeStr.split(' - ');
-                        const startTime = parseTime(startStr), endTime = parseTime(endStr);
+                        
+                        const timeParts = String(timeStr).split(/\s*[-–—]\s*/);
+                        const startStr = timeParts[0] || timeStr;
+                        const endStr = timeParts.length > 1 ? timeParts[1] : startStr;
+
+                        const startTime = parseTime(startStr);
+                        const endTime = parseTime(endStr);
+                        
                         let style = colors[myClass.base] || "bg-gray-800/50 border-gray-600/50 text-gray-300";
                         let statusBadge = '', cardOutline = 'border-transparent', progressHTML = '';
                         
@@ -592,9 +601,9 @@
                                 ${statusBadge}
                                 <div class="flex justify-between items-start mb-1 gap-1">
                                     <span class="font-extrabold text-[11px] tracking-wide leading-tight">${myClass.course} ${myClass.section || ''}</span>
-                                    <span class="text-[8px] font-mono bg-black/50 border border-white/10 px-1 py-0.5 rounded text-gray-300 flex-shrink-0">${myClass.room}</span>
+                                    <span class="text-[8px] font-mono bg-black/50 border border-white/10 px-1 py-0.5 rounded text-gray-300 flex-shrink-0">${myClass.room || 'TBA'}</span>
                                 </div>
-                                <div class="text-[9px] font-medium opacity-75 flex items-center"><i class="fa-regular fa-clock mr-1 text-[8px] text-brand-400"></i> ${startStr.replace(/ AM| PM/g, '')} - ${endStr.replace(/ AM| PM/g, '')}</div>
+                                <div class="text-[9px] font-medium opacity-75 flex items-center"><i class="fa-regular fa-clock mr-1 text-[8px] text-brand-400"></i> ${startStr.replace(/ AM| PM/gi, '')} - ${endStr.replace(/ AM| PM/gi, '')}</div>
                                 ${progressHTML}
                             </div>
                         `;
