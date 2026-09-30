@@ -3,1676 +3,673 @@
         "Monday": {
             "08:45 AM - 09:45 AM": [
                 {
-                    "course": "PC2",
-                    "base": "PC",
-                    "section": "Sec2",
-                    "room": "B05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP4",
-                    "base": "OOP",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec4",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "room": "G08"
                 },
                 {
-                    "course": "RANAC1",
-                    "base": "RANAC",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "LAB 103"
                 }
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "RANAC2",
-                    "base": "RANAC",
-                    "section": "Sec2",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CS",
-                    "base": "CS",
-                    "section": "",
-                    "room": "B03",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ADSA1",
-                    "base": "ADSA",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "LAB 103"
+                },
+                {
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec2",
+                    "room": "G08"
+                },
+                {
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec3",
+                    "room": "G07"
                 }
             ],
             "11:00 AM - 12:00 PM": [
                 {
-                    "course": "OS2",
-                    "base": "OS",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec2",
-                    "room": "B03",
-                    "branch": "ALL"
+                    "room": "G08"
                 },
                 {
-                    "course": "DBMS1",
-                    "base": "DBMS",
-                    "section": "Sec1",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CNA",
-                    "base": "CNA",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DBMS3",
-                    "base": "DBMS",
+                    "base": "CP",
+                    "course": "CP",
                     "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
+                    "room": "Lab 103"
+                },
+                {
+                    "base": "DLD",
+                    "course": "DLD",
+                    "section": "Sec1",
+                    "room": "G09"
                 }
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "OS1",
-                    "base": "OS",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec4",
+                    "room": "G07"
                 },
                 {
-                    "course": "OS3",
-                    "base": "OS",
+                    "base": "CP",
+                    "course": "CP",
                     "section": "Sec3",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ML",
-                    "base": "ML",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
+                    "room": "Lab 103"
                 }
             ],
             "02:15 PM - 03:15 PM": [
                 {
-                    "course": "DBMS2",
-                    "base": "DBMS",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec2",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "ADSA3",
-                    "base": "ADSA",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "room": "G07"
                 },
                 {
-                    "course": "RANAC4",
-                    "base": "RANAC",
-                    "section": "Sec4",
-                    "room": "G09",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec1",
+                    "room": "G08"
                 }
             ],
             "03:15 PM - 04:15 PM": [
                 {
-                    "course": "RANAC3",
-                    "base": "RANAC",
-                    "section": "Sec3",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ADSA2",
-                    "base": "ADSA",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec2",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "OOP4",
-                    "base": "OOP",
-                    "section": "Sec4",
-                    "room": "G07",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec3",
+                    "room": "G08"
                 }
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "OOP2",
-                    "base": "OOP",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PC3",
-                    "base": "PC",
-                    "section": "Sec3",
-                    "room": "Lab B05",
-                    "branch": "ALL"
-                }
-            ],
-            "05:30 PM - 06:30 PM": [
-                {
-                    "course": "PC3",
-                    "base": "PC",
-                    "section": "Sec3",
-                    "room": "Lab B05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP2",
-                    "base": "OOP",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec5",
+                    "room": "G04"
                 }
             ]
         },
         "Tuesday": {
             "08:45 AM - 09:45 AM": [
                 {
-                    "course": "PC1",
-                    "base": "PC",
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec4",
+                    "room": "Lab 103"
+                },
+                {
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec1",
-                    "room": "B05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "RANAC3",
-                    "base": "RANAC",
-                    "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CNA",
-                    "base": "CNA",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "Lab 114/102"
                 }
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "OOP1",
-                    "base": "OOP",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec4",
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "CS",
-                    "base": "CS",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "base": "DLD",
+                    "course": "DLD",
+                    "section": "Sec1",
+                    "room": "Lab 114/102"
+                },
+                {
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec3",
+                    "room": "G08"
+                },
+                {
+                    "base": "OCW",
+                    "course": "OCW",
+                    "section": "Sec2",
+                    "room": "G09"
                 }
             ],
             "11:00 AM - 12:00 PM": [
                 {
-                    "course": "OOP3",
-                    "base": "OOP",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec3",
-                    "room": "Lab 103",
-                    "branch": "ALL"
+                    "room": "Lab 114/102"
                 },
                 {
-                    "course": "DBMS1",
-                    "base": "DBMS",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP2",
-                    "base": "OOP",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec2",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "room": "G08"
+                },
+                {
+                    "base": "DLD",
+                    "course": "DLD",
+                    "section": "Sec4",
+                    "room": "G09"
                 }
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "OOP3",
-                    "base": "OOP",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec3",
-                    "room": "Lab 103",
-                    "branch": "ALL"
+                    "room": "Lab 114/102"
                 },
                 {
-                    "course": "PC4",
-                    "base": "PC",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec4",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "RANAC2",
-                    "base": "RANAC",
-                    "section": "Sec2",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "G08"
                 }
             ],
             "02:15 PM - 03:15 PM": [
                 {
-                    "course": "OS1",
-                    "base": "OS",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS2",
-                    "base": "OS",
-                    "section": "Sec2",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS3",
-                    "base": "OS",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec3",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "ML",
-                    "base": "ML",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec2",
+                    "room": "G09"
+                },
+                {
+                    "base": "DLD",
+                    "course": "DLD",
+                    "section": "Sec1",
+                    "room": "B03"
                 }
             ],
             "03:15 PM - 04:15 PM": [
                 {
-                    "course": "ADSA1",
-                    "base": "ADSA",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ES",
-                    "base": "ES",
-                    "section": "",
-                    "room": "LAB 114/102",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ADSA3",
-                    "base": "ADSA",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "DBMS2",
-                    "base": "DBMS",
+                    "base": "CP",
+                    "course": "CP",
                     "section": "Sec2",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "G09"
+                },
+                {
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec4",
+                    "room": "B03"
+                },
+                {
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec1",
+                    "room": "G08"
                 }
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "RANAC1",
-                    "base": "RANAC",
+                    "base": "CP",
+                    "course": "CP",
                     "section": "Sec1",
-                    "room": "G08",
-                    "branch": "ALL"
+                    "room": "G06"
                 },
                 {
-                    "course": "ES",
-                    "base": "ES",
-                    "section": "",
-                    "room": "LAB 114/102",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec4",
+                    "room": "G09"
                 },
                 {
-                    "course": "PC3",
-                    "base": "PC",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec3",
-                    "room": "B05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ADSA2",
-                    "base": "ADSA",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                }
-            ],
-            "05:30 PM - 06:30 PM": [
-                {
-                    "course": "ADSA2",
-                    "base": "ADSA",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
+                    "room": "G07"
                 }
             ]
         },
         "Wednesday": {
             "08:45 AM - 09:45 AM": [
                 {
-                    "course": "ADSA2",
-                    "base": "ADSA",
-                    "section": "Sec2",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec1",
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "CS",
-                    "base": "CS",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DBMS3",
-                    "base": "DBMS",
-                    "section": "Sec3",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "base": "DLD",
+                    "course": "DLD",
+                    "section": "Sec4",
+                    "room": "LAB 114/102"
                 }
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "ML",
-                    "base": "ML",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec1",
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "PC4",
-                    "base": "PC",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec4",
-                    "room": "B05",
-                    "branch": "ALL"
+                    "room": "LAB 114/102"
                 },
                 {
-                    "course": "OS2",
-                    "base": "OS",
-                    "section": "Sec2",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "base": "DLD",
+                    "course": "DLD",
+                    "section": "Sec3",
+                    "room": "G07"
                 }
             ],
             "11:00 AM - 12:00 PM": [
                 {
-                    "course": "ADSA1",
-                    "base": "ADSA",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "G09"
                 },
                 {
-                    "course": "ADSA3",
-                    "base": "ADSA",
-                    "section": "Sec3",
-                    "room": "LAB 103",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec2",
+                    "room": "G08"
                 },
                 {
-                    "course": "RANAC4",
-                    "base": "RANAC",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec4",
-                    "room": "G07",
-                    "branch": "ALL"
+                    "room": "G04"
                 }
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "OOP1",
-                    "base": "OOP",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec5",
+                    "room": "G09"
                 },
                 {
-                    "course": "ADSA3",
-                    "base": "ADSA",
+                    "base": "DSMA",
+                    "course": "DSMA",
                     "section": "Sec3",
-                    "room": "LAB 103",
-                    "branch": "ALL"
+                    "room": "G07"
                 }
             ],
             "02:15 PM - 03:15 PM": [
                 {
-                    "course": "OOP4",
-                    "base": "OOP",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec4",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP3",
-                    "base": "OOP",
-                    "section": "Sec3",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP1",
-                    "base": "OOP",
-                    "section": "Sec1",
-                    "room": "Lab 103",
-                    "branch": "ALL"
+                    "room": "G09"
                 }
             ],
             "03:15 PM - 04:15 PM": [
                 {
-                    "course": "RANAC2",
-                    "base": "RANAC",
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec4",
+                    "room": "G09"
+                },
+                {
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec2",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "room": "G08"
                 },
                 {
-                    "course": "OOP1",
-                    "base": "OOP",
+                    "base": "DSMA",
+                    "course": "DSMA",
                     "section": "Sec1",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ES",
-                    "base": "ES",
-                    "section": "",
-                    "room": "G07",
-                    "branch": "ALL"
+                    "room": "G05"
                 }
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "DBMS3",
-                    "base": "DBMS",
-                    "section": "Sec3",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PC1",
-                    "base": "PC",
-                    "section": "Sec1",
-                    "room": "Lab B05",
-                    "branch": "ALL"
+                    "base": "EE",
+                    "course": "EE",
+                    "section": "Sec2",
+                    "room": "G08"
                 }
             ],
             "05:30 PM - 06:30 PM": [
                 {
-                    "course": "DBMS3",
-                    "base": "DBMS",
-                    "section": "Sec3",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PC1",
-                    "base": "PC",
-                    "section": "Sec1",
-                    "room": "Lab B05",
-                    "branch": "ALL"
+                    "base": "EE",
+                    "course": "EE",
+                    "section": "Sec2",
+                    "room": "G08"
                 }
             ]
         },
         "Thursday": {
             "08:45 AM - 09:45 AM": [
                 {
-                    "course": "RANAC1",
-                    "base": "RANAC",
-                    "section": "Sec1",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "RANAC4",
-                    "base": "RANAC",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec4",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "PC3",
-                    "base": "PC",
-                    "section": "Sec3",
-                    "room": "G07",
-                    "branch": "ALL"
+                    "base": "OCW",
+                    "course": "OCW",
+                    "section": "Sec1",
+                    "room": "G08"
                 }
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "CNA",
-                    "base": "CNA",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "base": "OCW",
+                    "course": "OCW",
+                    "section": "Sec4",
+                    "room": "Lab 103"
                 },
                 {
-                    "course": "OOP2",
-                    "base": "OOP",
-                    "section": "Sec2",
-                    "room": "G08",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec1",
+                    "room": "G09"
+                },
+                {
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec3",
+                    "room": "G07"
                 }
             ],
             "11:00 AM - 12:00 PM": [
                 {
-                    "course": "DBMS1",
-                    "base": "DBMS",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec1",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "G09"
                 },
                 {
-                    "course": "CNA",
-                    "base": "CNA",
-                    "section": "",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec2",
+                    "room": "lab 103"
                 },
                 {
-                    "course": "RANAC3",
-                    "base": "RANAC",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "room": "G07"
                 }
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "CNA",
-                    "base": "CNA",
-                    "section": "",
-                    "room": "Lab 114/102",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS1",
-                    "base": "OS",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS2",
-                    "base": "OS",
+                    "base": "CP",
+                    "course": "CP",
                     "section": "Sec2",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "room": "lab 103"
                 },
                 {
-                    "course": "ML",
-                    "base": "ML",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
+                    "base": "OCW",
+                    "course": "OCW",
+                    "section": "Sec4",
+                    "room": "G08"
+                },
+                {
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec1",
+                    "room": "G09"
                 }
             ],
             "02:15 PM - 03:15 PM": [
                 {
-                    "course": "OOP4",
-                    "base": "OOP",
-                    "section": "Sec4",
-                    "room": "Lab 103",
-                    "branch": "ALL"
+                    "base": "OCW",
+                    "course": "OCW",
+                    "section": "Sec2",
+                    "room": "B05"
                 },
                 {
-                    "course": "OOP3",
-                    "base": "OOP",
-                    "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec4",
+                    "room": "G08"
                 }
             ],
             "03:15 PM - 04:15 PM": [
                 {
-                    "course": "PC1",
-                    "base": "PC",
-                    "section": "Sec1",
-                    "room": "B05",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec5",
+                    "room": "G09"
                 },
                 {
-                    "course": "OS3",
-                    "base": "OS",
-                    "section": "Sec3",
-                    "room": "G08",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "RANAC2",
-                    "base": "RANAC",
+                    "base": "DSMA",
+                    "course": "DSMA",
                     "section": "Sec2",
-                    "room": "G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP4",
-                    "base": "OOP",
-                    "section": "Sec4",
-                    "room": "Lab 103",
-                    "branch": "ALL"
+                    "room": "G07"
                 }
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "DBMS2",
-                    "base": "DBMS",
-                    "section": "Sec2",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CS",
-                    "base": "CS",
-                    "section": "",
-                    "room": "G09",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DBMS3",
-                    "base": "DBMS",
-                    "section": "Sec3",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP1",
-                    "base": "OOP",
+                    "base": "EDL",
+                    "course": "EDL",
                     "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "room": "G08"
                 }
             ],
             "05:30 PM - 06:30 PM": [
                 {
-                    "course": "DBMS2",
-                    "base": "DBMS",
-                    "section": "Sec2",
-                    "room": "LAB 103",
-                    "branch": "ALL"
+                    "base": "EDL",
+                    "course": "EDL",
+                    "section": "Sec1",
+                    "room": "G08"
                 }
             ]
         },
         "Friday": {
             "08:45 AM - 09:45 AM": [
                 {
-                    "course": "RANAC3",
-                    "base": "RANAC",
-                    "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PC4",
-                    "base": "PC",
-                    "section": "Sec4",
-                    "room": "Lab B05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ADSA1",
-                    "base": "ADSA",
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec1",
-                    "room": "LAB 103",
-                    "branch": "ALL"
+                    "room": "G09"
                 }
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "ADSA1",
-                    "base": "ADSA",
-                    "section": "Sec1",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PC4",
-                    "base": "PC",
+                    "base": "DSMA",
+                    "course": "DSMA",
                     "section": "Sec4",
-                    "room": "Lab B05",
-                    "branch": "ALL"
+                    "room": "G09"
                 },
                 {
-                    "course": "OS3",
-                    "base": "OS",
-                    "section": "Sec3",
-                    "room": "B04",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec5",
+                    "room": "G08"
+                },
+                {
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec2",
+                    "room": "G07"
                 }
             ],
             "11:00 AM - 12:00 PM": [
                 {
-                    "course": "DBMS2",
-                    "base": "DBMS",
+                    "base": "DLD",
+                    "course": "DLD",
+                    "section": "Sec3",
+                    "room": "G08"
+                },
+                {
+                    "base": "OCW",
+                    "course": "OCW",
                     "section": "Sec2",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS1",
-                    "base": "OS",
-                    "section": "Sec1",
-                    "room": "G07",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ES",
-                    "base": "ES",
-                    "section": "",
-                    "room": "B03",
-                    "branch": "ALL"
+                    "room": "G09"
                 }
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "PC2",
-                    "base": "PC",
-                    "section": "Sec2",
-                    "room": "B04",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec3",
+                    "room": "G06"
                 },
                 {
-                    "course": "ADSA3",
-                    "base": "ADSA",
-                    "section": "Sec3",
-                    "room": "G08",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec2",
+                    "room": "G09"
+                },
+                {
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec1",
+                    "room": "G07"
                 }
             ],
             "02:15 PM - 03:15 PM": [
                 {
-                    "course": "RANAC1",
-                    "base": "RANAC",
-                    "section": "Sec1",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "base": "CP",
+                    "course": "CP",
+                    "section": "Sec4",
+                    "room": "G09"
                 },
                 {
-                    "course": "ES",
-                    "base": "ES",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "base": "DSMA",
+                    "course": "DSMA",
+                    "section": "Sec3",
+                    "room": "G08"
                 },
                 {
-                    "course": "ADSA2",
-                    "base": "ADSA",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec2",
-                    "room": "G07",
-                    "branch": "ALL"
+                    "room": "Lab 114/102"
                 }
             ],
             "03:15 PM - 04:15 PM": [
                 {
-                    "course": "DBMS1",
-                    "base": "DBMS",
-                    "section": "Sec1",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP3",
-                    "base": "OOP",
-                    "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OOP2",
-                    "base": "OOP",
+                    "base": "DLD",
+                    "course": "DLD",
                     "section": "Sec2",
-                    "room": "G06",
-                    "branch": "ALL"
+                    "room": "Lab 114/102"
                 },
                 {
-                    "course": "RANAC4",
-                    "base": "RANAC",
-                    "section": "Sec4",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "base": "OCW",
+                    "course": "OCW",
+                    "section": "Sec3",
+                    "room": "G07"
                 }
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "DBMS1",
-                    "base": "DBMS",
+                    "base": "EE",
+                    "course": "EE",
                     "section": "Sec1",
-                    "room": "LAB 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PC2",
-                    "base": "PC",
-                    "section": "Sec2",
-                    "room": "Lab B05",
-                    "branch": "ALL"
+                    "room": "G06"
                 }
             ],
             "05:30 PM - 06:30 PM": [
                 {
-                    "course": "PC2",
-                    "base": "PC",
-                    "section": "Sec2",
-                    "room": "Lab B05",
-                    "branch": "ALL"
+                    "base": "EE",
+                    "course": "EE",
+                    "section": "Sec1",
+                    "room": "G06"
                 }
             ]
         },
         "Saturday": {
             "08:45 AM - 09:45 AM": [
                 {
-                    "course": "FHVE",
                     "base": "FHVE",
-                    "section": "",
-                    "room": "12345",
-                    "branch": "ALL"
+                    "course": "FHVE",
+                    "branch": "ALL",
+                    "room": "TBD"
                 }
             ],
             "09:45 AM - 10:45 AM": [
                 {
-                    "course": "FHVE",
                     "base": "FHVE",
-                    "section": "",
-                    "room": "12345",
-                    "branch": "ALL"
+                    "course": "FHVE",
+                    "branch": "ALL",
+                    "room": "TBD"
                 }
             ],
             "11:00 AM - 12:00 PM": [
                 {
-                    "course": "FHVE",
                     "base": "FHVE",
-                    "section": "",
-                    "room": "12345",
-                    "branch": "ALL"
+                    "course": "FHVE",
+                    "branch": "ALL",
+                    "room": "TBD"
                 }
             ],
             "12:00 PM - 01:00 PM": [
                 {
-                    "course": "FHVE",
                     "base": "FHVE",
-                    "section": "",
-                    "room": "12345",
-                    "branch": "ALL"
+                    "course": "FHVE",
+                    "branch": "ALL",
+                    "room": "TBD"
                 }
             ],
             "02:15 PM - 03:15 PM": [
                 {
-                    "course": "FHVE",
                     "base": "FHVE",
-                    "section": "",
-                    "room": "12345",
-                    "branch": "ALL"
+                    "course": "FHVE",
+                    "branch": "ALL",
+                    "room": "TBD"
                 }
             ],
             "03:15 PM - 04:15 PM": [
                 {
-                    "course": "FHVE",
                     "base": "FHVE",
-                    "section": "",
-                    "room": "12345",
-                    "branch": "ALL"
+                    "course": "FHVE",
+                    "branch": "ALL",
+                    "room": "TBD"
                 }
             ],
             "04:30 PM - 05:30 PM": [
                 {
-                    "course": "EDL2",
                     "base": "EDL",
+                    "course": "EDL",
                     "section": "Sec2",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "room": "G04"
                 }
             ],
             "05:30 PM - 06:30 PM": [
                 {
-                    "course": "EDL2",
                     "base": "EDL",
+                    "course": "EDL",
                     "section": "Sec2",
-                    "room": "G04",
-                    "branch": "ALL"
+                    "room": "G04"
                 }
             ]
         }
     },
-    "UG2": {
-        "Monday": {
-            "08:45 AM - 09:45 AM": [
-                {
-                    "course": "ICS",
-                    "base": "ICS",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "BTA",
-                    "base": "BTA",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "EP",
-                    "base": "EP",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                }
-            ],
-            "09:45 AM - 10:45 AM": [
-                {
-                    "course": "VAR",
-                    "base": "VAR",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GNN-AI",
-                    "base": "GNN-AI",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                }
-            ],
-            "11:00 AM - 12:00 PM": [
-                {
-                    "course": "ML1",
-                    "base": "ML",
-                    "section": "Sec1",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ML2",
-                    "base": "ML",
-                    "section": "Sec2",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CD",
-                    "base": "CD",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "FQC",
-                    "base": "FQC",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PDS",
-                    "base": "PDS",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSP",
-                    "base": "DSP",
-                    "section": "",
-                    "room": "G04",
-                    "branch": "ALL"
-                }
-            ],
-            "12:00 PM - 01:00 PM": [
-                {
-                    "course": "AEM",
-                    "base": "AEM",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MML",
-                    "base": "MML",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DE",
-                    "base": "DE",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ASM",
-                    "base": "ASM",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MCD",
-                    "base": "MCD",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                }
-            ],
-            "02:15 PM - 03:15 PM": [
-                {
-                    "course": "CRYPTO",
-                    "base": "CRYPTO",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                }
-            ],
-            "03:15 PM - 04:15 PM": [
-                {
-                    "course": "ANN",
-                    "base": "ANN",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "RI",
-                    "base": "RI",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                }
-            ],
-            "04:30 PM - 05:30 PM": [
-                {
-                    "course": "DSD",
-                    "base": "DSD",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "AE",
-                    "base": "AE",
-                    "section": "",
-                    "room": "104",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Tuesday": {
-            "08:45 AM - 09:45 AM": [
-                {
-                    "course": "ML1",
-                    "base": "ML",
-                    "section": "Sec1",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ML2",
-                    "base": "ML",
-                    "section": "Sec2",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "FQC",
-                    "base": "FQC",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MCD",
-                    "base": "MCD",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CD",
-                    "base": "CD",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS",
-                    "base": "OS",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                }
-            ],
-            "09:45 AM - 10:45 AM": [
-                {
-                    "course": "GNN-AI",
-                    "base": "GNN-AI",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ADL",
-                    "base": "ADL",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ],
-            "11:00 AM - 12:00 PM": [
-                {
-                    "course": "IR",
-                    "base": "IR",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CC",
-                    "base": "CC",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "HPC",
-                    "base": "HPC",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "NLP",
-                    "base": "NLP",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MPMC",
-                    "base": "MPMC",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GDIT",
-                    "base": "GDIT",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                }
-            ],
-            "12:00 PM - 01:00 PM": [
-                {
-                    "course": "IDA",
-                    "base": "IDA",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
-                }
-            ],
-            "02:15 PM - 03:15 PM": [
-                {
-                    "course": "DTCA",
-                    "base": "DTCA",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ANN",
-                    "base": "ANN",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DL&CV",
-                    "base": "DL&CV",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ],
-            "03:15 PM - 04:15 PM": [
-                {
-                    "course": "CRYPTO",
-                    "base": "CRYPTO",
-                    "section": "",
-                    "room": "104",
-                    "branch": "ALL"
-                }
-            ],
-            "04:30 PM - 05:30 PM": [
-                {
-                    "course": "BDA",
-                    "base": "BDA",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Wednesday": {
-            "08:45 AM - 09:45 AM": [
-                {
-                    "course": "IR",
-                    "base": "IR",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CC",
-                    "base": "CC",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "HPC",
-                    "base": "HPC",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GDIT",
-                    "base": "GDIT",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "NLP",
-                    "base": "NLP",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                }
-            ],
-            "09:45 AM - 10:45 AM": [
-                {
-                    "course": "DSD",
-                    "base": "DSD",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "CRYPTO",
-                    "base": "CRYPTO",
-                    "section": "",
-                    "room": "104",
-                    "branch": "ALL"
-                }
-            ],
-            "11:00 AM - 12:00 PM": [
-                {
-                    "course": "ADL",
-                    "base": "ADL",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "VAR",
-                    "base": "VAR",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "GNN-AI",
-                    "base": "GNN-AI",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                }
-            ],
-            "12:00 PM - 01:00 PM": [
-                {
-                    "course": "AE",
-                    "base": "AE",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                }
-            ],
-            "02:15 PM - 03:15 PM": [
-                {
-                    "course": "DTCA",
-                    "base": "DTCA",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "IDA",
-                    "base": "IDA",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DL&CV",
-                    "base": "DL&CV",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ],
-            "03:15 PM - 04:15 PM": [
-                {
-                    "course": "RI",
-                    "base": "RI",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Thursday": {
-            "08:45 AM - 09:45 AM": [
-                {
-                    "course": "AEM",
-                    "base": "AEM",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DE",
-                    "base": "DE",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                }
-            ],
-            "09:45 AM - 10:45 AM": [
-                {
-                    "course": "DSD",
-                    "base": "DSD",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ADL",
-                    "base": "ADL",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ],
-            "11:00 AM - 12:00 PM": [
-                {
-                    "course": "AE",
-                    "base": "AE",
-                    "section": "",
-                    "room": "104",
-                    "branch": "ALL"
-                }
-            ],
-            "12:00 PM - 01:00 PM": [
-                {
-                    "course": "BDA",
-                    "base": "BDA",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ],
-            "02:15 PM - 03:15 PM": [
-                {
-                    "course": "DTCA",
-                    "base": "DTCA",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                }
-            ],
-            "03:15 PM - 04:15 PM": [
-                {
-                    "course": "FDFED3",
-                    "base": "FDFED",
-                    "section": "Sec3",
-                    "room": "G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DSP",
-                    "base": "DSP",
-                    "section": "",
-                    "room": "G06",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "OS",
-                    "base": "OS",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ],
-            "04:30 PM - 05:30 PM": [
-                {
-                    "course": "IOTA",
-                    "base": "IOTA",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ICS",
-                    "base": "ICS",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "BTA",
-                    "base": "BTA",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DIP",
-                    "base": "DIP",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Friday": {
-            "08:45 AM - 09:45 AM": [
-                {
-                    "course": "BDA",
-                    "base": "BDA",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                }
-            ],
-            "09:45 AM - 10:45 AM": [
-                {
-                    "course": "VAR",
-                    "base": "VAR",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                }
-            ],
-            "11:00 AM - 12:00 PM": [
-                {
-                    "course": "ANN",
-                    "base": "ANN",
-                    "section": "",
-                    "room": "111",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "DL&CV",
-                    "base": "DL&CV",
-                    "section": "",
-                    "room": "104",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "RI",
-                    "base": "RI",
-                    "section": "",
-                    "room": "105",
-                    "branch": "ALL"
-                }
-            ],
-            "12:00 PM - 01:00 PM": [
-                {
-                    "course": "FDFED1",
-                    "base": "FDFED",
-                    "section": "Sec1",
-                    "room": "Lab G04",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "FDFED2",
-                    "base": "FDFED",
-                    "section": "Sec2",
-                    "room": "Lab 103",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "FDFED3",
-                    "base": "FDFED",
-                    "section": "Sec3",
-                    "room": "Lab G05",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "MPMC",
-                    "base": "MPMC",
-                    "section": "",
-                    "room": "Lab 114/104",
-                    "branch": "ALL"
-                }
-            ],
-            "02:15 PM - 03:15 PM": [
-                {
-                    "course": "IDA",
-                    "base": "IDA",
-                    "section": "",
-                    "room": "G05",
-                    "branch": "ALL"
-                }
-            ],
-            "03:15 PM - 04:15 PM": [
-                {
-                    "course": "AEM",
-                    "base": "AEM",
-                    "section": "",
-                    "room": "109",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "ASM",
-                    "base": "ASM",
-                    "section": "",
-                    "room": "112",
-                    "branch": "ALL"
-                },
-                {
-                    "course": "PR",
-                    "base": "PR",
-                    "section": "",
-                    "room": "108",
-                    "branch": "ALL"
-                }
-            ],
-            "04:30 PM - 05:30 PM": [
-                {
-                    "course": "GENAI",
-                    "base": "GENAI",
-                    "section": "",
-                    "room": "110",
-                    "branch": "ALL"
-                }
-            ]
-        },
-        "Saturday": {
-            "08:45 AM - 09:45 AM": [
-                {
-                    "course": "OB1",
-                    "base": "OB",
-                    "section": "Sec1",
-                    "room": "B03",
-                    "branch": "ALL"
-                }
-            ],
-            "09:45 AM - 10:45 AM": [
-                {
-                    "course": "OB1",
-                    "base": "OB",
-                    "section": "Sec1",
-                    "room": "B03",
-                    "branch": "ALL"
-                }
-            ],
-            "11:00 AM - 12:00 PM": [
-                {
-                    "course": "OB2",
-                    "base": "OB",
-                    "section": "Sec2",
-                    "room": "B03",
-                    "branch": "ALL"
-                }
-            ],
-            "12:00 PM - 01:00 PM": [
-                {
-                    "course": "OB2",
-                    "base": "OB",
-                    "section": "Sec2",
-                    "room": "B03",
-                    "branch": "ALL"
-                }
-            ],
-            "02:15 PM - 03:15 PM": [
-                {
-                    "course": "GENAI",
-                    "base": "GENAI",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ],
-            "03:15 PM - 04:15 PM": [
-                {
-                    "course": "GENAI",
-                    "base": "GENAI",
-                    "section": "",
-                    "room": "",
-                    "branch": "ALL"
-                }
-            ]
-        }
-    },
+    "UG2": {},
     "UG3": {},
     "UG4": {}
 }
