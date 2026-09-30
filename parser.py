@@ -76,7 +76,7 @@ for course, files in pdf_files.items():
 with open('students.json', 'w') as f:
     json.dump(student_db, f, indent=4)
 # ==========================================
-# PART 2: TIMETABLE GRID PARSER (FIXED)
+# PART 2: TIMETABLE GRID PARSER (PERFECTED)
 # ==========================================
 import pdfplumber
 import json
@@ -101,17 +101,23 @@ if os.path.exists(timetable_filepath):
                     if not table: continue
                     
                     for row in table[1:]:
+                        if len(row) < 7: 
+                            continue # Safely skip malformed rows
+                        
                         time_slot = row[0] 
                         if not time_slot or "BREAK" in time_slot.upper() or "LUNCH" in time_slot.upper():
                             continue
                         
+                        # Clean up weird PDF time formatting (e.g., "10:\n45 AM")
                         clean_time = time_slot.replace('\n', '').strip()
                         if '-' in clean_time and ' - ' not in clean_time:
                             clean_time = clean_time.replace('-', ' - ')
+                        clean_time = re.sub(r'\s+', ' ', clean_time)
                         
                         for i, day in enumerate(days):
                             if i + 1 < len(row) and row[i+1]:
-                                classes_raw = row[i+1].split('\n')
+                                cell_text = row[i+1]
+                                classes_raw = [c.strip() for c in cell_text.split('\n') if c.strip()]
                                 
                                 if day not in timetable_db[batch]: 
                                     timetable_db[batch][day] = {}
@@ -119,22 +125,21 @@ if os.path.exists(timetable_filepath):
                                     timetable_db[batch][day][clean_time] = []
                                     
                                 for class_str in classes_raw:
-                                    class_str = class_str.strip()
-                                    if not class_str: continue
+                                    # Regex: Captures Base Course (letters/hyphens/&), Section (digits), Room (rest)
+                                    match = re.match(r'^([A-Za-z\-&]+)(\d*)\s+(.*)$', class_str)
                                     
-                                    match = re.match(r'^([A-Za-z]+)(\d*)\s+(.*)$', class_str)
                                     if match:
                                         base = match.group(1).upper()
                                         sec_num = match.group(2)
                                         room = match.group(3).strip()
                                         
-                                        if base in ["FHVE", "EE", "EDL", "PGP", "QRA"]:
+                                        # If there's a section number, lock it to that section. If blank, show to ALL.
+                                        if sec_num:
+                                            branch = "" 
+                                            section = f"Sec{sec_num}"
+                                        else:
                                             branch = "ALL"
                                             section = ""
-                                        else:
-                                            # THE FIX: Leave branch empty so the web app is forced to match your section!
-                                            branch = "" 
-                                            section = f"Sec{sec_num}" if sec_num else ""
                                             
                                         timetable_db[batch][day][clean_time].append({
                                             "course": f"{base}{sec_num}" if sec_num else base,
@@ -144,13 +149,14 @@ if os.path.exists(timetable_filepath):
                                             "branch": branch
                                         })
                                     else:
+                                        # Safe Fallback for unconventional strings
                                         parts = class_str.split()
                                         timetable_db[batch][day][clean_time].append({
                                             "course": parts[0] if parts else class_str,
                                             "base": parts[0].upper() if parts else class_str,
                                             "section": "",
                                             "room": " ".join(parts[1:]) if len(parts) > 1 else "",
-                                            "branch": "" 
+                                            "branch": "ALL" 
                                         })
                                         
         with open('timetable.json', 'w') as f:
